@@ -35,3 +35,7 @@
 2026-04-26 21:46 : feat(yc-context): add YC AI-native doctrine section -- 7 concepts from YC source: AI-as-OS, closed loops, queryable company, software factories, no human middleware, token-max, 3 archetypes — @fatih
 2026-04-26 21:46 : feat(critique-rubric): add AI-native signal check -- 5 signals to scan before question-by-question pass; catches "we use AI to..." framing vs OS-level integration — @fatih
 2026-04-26 22:08 : fix(ci): awk bleeds past frontmatter --- into file body — @fatih
+2026-04-26 22:08 : fix(ci): added /^---/ stop condition to awk -- form-fill/founder-profile/onboarding now 342/380/363 chars vs 12792/3807/3481; all pass 1024-char limit — @fatih
+2026-04-26 22:08 : fix(git): rebased local main on dev/main -- resolved ELEPHANT.md conflict keeping both feat entries; local now 1 commit ahead of dev/main — @fatih
+2026-04-26 22:09 : feat: README badges added (version/license/platform) + version bumped 0.3.0 -> 0.9.1 across plugin.json, CHANGELOG, README — @fatih
+2026-04-26 22:09 : rule: CLAUDE.md versioning rule added -- plugin.json + README badge + CHANGELOG must match; update all three in same commit — @fatih

@@ -5,6 +5,12 @@ This project adheres to [Semantic Versioning](https://semver.org) and [Keep a Ch
 
 ## [Unreleased]
 
+## [0.9.1] - 2026-04-26
+
+### Added
+
+- README badges: version, license, platform
+
 ## [0.3.0] - 2026-04-26
 
 ### Added
