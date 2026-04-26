@@ -7,6 +7,7 @@
   },
   "keywords": ["yc", "ycombinator", "startup", "application", "fundraising"],
   "skills": [
+    "skills/onboarding/SKILL.md",
     "skills/yc-application/SKILL.md",
     "skills/founder-profile/SKILL.md",
     "skills/form-fill/SKILL.md"

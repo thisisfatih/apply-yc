@@ -1,20 +1,10 @@
 # apply-yc
 
-Claude Code skill that helps founders write YC applications that get interviews.
+Claude Code plugin for writing YC applications that get interviews.
 
-Built on Paul Graham's "How to Apply" essay, partner advice from Michael Seibel / Garry Tan / Dalton Caldwell / Jessica Livingston, and two real successful applications (Dropbox S07, Basedash S20).
+Built on Paul Graham's "How to Apply" essay, partner advice (Seibel, Tan, Caldwell, Livingston), and real accepted applications (Dropbox S07, Basedash S20).
 
-## What it does
-
-7 workflow modes, triggered automatically based on what the founder needs:
-
-1. **Draft from scratch** - section by section, produces copy-paste text
-2. **Critique existing draft** - partner-mindset rubric, concrete rewrites not just comments
-3. **Stuck on one question** - 2-3 alternatives for the high-stakes questions
-4. **Video prep** - guidelines for the 1-minute founder video
-5. **Interview prep** - question bank, format, what not to do
-6. **Reapplying** - how to frame "what changed since last time"
-7. **Strategic context** - RFS, deal terms, batch structure, acceptance dynamics
+---
 
 ## Install
 
@@ -23,49 +13,111 @@ claude plugin marketplace add thisisfatih/apply-yc
 claude plugin install apply-yc@thisisfatih
 ```
 
-The skill triggers automatically on YC-related prompts. No configuration needed.
+---
 
-## Build from source
+## How it works
 
-Requires Python 3.10+.
+Three skills. Run in order.
 
-```bash
-./scripts/build.sh
+### 1. Discovery — `founder-profile`
+
+Fires first. Understand the founder before touching the form.
+
+- **Reapply check** — Applied before? What batch, what feedback, what changed? 30% of accepted founders applied before. This context changes everything.
+- **Deep discovery** — Founder background, hard achievements, company, traction, why now. Probes until specific. No adjectives, only facts.
+- **Angle analysis** — Surfaces your 3 strongest cards for a YC partner. Flags instant-reject risks (no technical founder, no product, no traction, "no competitors") before any drafting happens.
+
+Nothing gets drafted until the angle analysis is confirmed.
+
+### 2. Drafting + critique — `yc-application`
+
+Drafts in the order that matters, not form order.
+
+- **Gatekeeping questions first** — 50-char pitch, "what does your company make", "most impressive thing". These decide whether the rest gets read. Multiple versions, iterate until excellent.
+- **Complete remaining sections** — all other fields, using the established narrative.
+- **Partner critique pass** — reads the full draft as a YC partner would. Flags every [KILL] and [WEAK] answer. Rewrites, not comments.
+
+Nothing goes to the form until [KILL] flags are resolved.
+
+### 3. Form fill — `form-fill`
+
+Requires Playwright MCP. Opens the live YC application form.
+
+- Claude fills every field from the locked profile
+- Screenshot shown after each section — you approve before advancing
+- You click all buttons (Save, Submit, Next). Claude never clicks those.
+
+---
+
+## Full flow
+
+```
+"I want to apply to YC"
+        │
+        ▼
+  founder-profile
+  ├── Applied before? → reapply context
+  ├── Who are you, what's the company, what's impressive
+  ├── What's your traction (real numbers)
+  └── Angle analysis → confirm before proceeding
+        │
+        ▼
+  yc-application
+  ├── 50-char pitch (iterate until excellent)
+  ├── Product description (partner must get it in 4 seconds)
+  ├── Most impressive thing (PG: most important question)
+  ├── Complete remaining sections
+  └── Full partner critique → fix all [KILL] flags
+        │
+        ▼
+  form-fill (+ Playwright)
+  ├── Open ycombinator.com/apply (you log in)
+  ├── Claude fills each section
+  ├── You review screenshot → approve
+  └── You click Submit
 ```
 
-Output: `dist/apply-yc.skill`
+---
+
+## Without the form filler
+
+If you don't want Playwright, the first two skills work standalone. Run `founder-profile` + `yc-application` to get polished, partner-reviewed answers. Paste them yourself.
+
+---
 
 ## Maintenance
 
-**Every batch (4x/year):**
-- Re-verify deadline at ycombinator.com/apply
-- Refresh RFS list in `skills/yc-application/references/yc-context.md`
-- Check application questions match `skills/yc-application/references/application-questions.md`
+**Every batch (4x/year):** refresh `yc-context.md` — deadlines, RFS list, deal terms. A scheduled agent does this automatically and opens a PR if anything changed.
 
-**Every year:**
-- Re-verify deal terms ($125k for 7% + $375k uncapped MFN SAFE as of 2026)
-- Refresh partner roster
-- Update acceptance rate stats
+**Every year:** re-verify deal terms, partner roster, acceptance rate stats.
 
 See `docs/sources.md` for all citation URLs.
+
+---
 
 ## Structure
 
 ```
-skills/yc-application/
-  SKILL.md                     router + core principles (89 lines)
-  references/
-    application-questions.md   full question list with rubrics and examples
-    critique-rubric.md         partner-mindset evaluation checklist
-    interview-prep.md          interview format, question bank, what not to do
-    reapplying.md              strategy for "what changed" question
-    successful-applications.md Dropbox S07 + Basedash S20 annotated
-    video-and-demo.md          founder video guidelines
-    yc-context.md              batch structure, deal terms, RFS, partners
+skills/
+  yc-application/
+    SKILL.md                     router + core principles
+    references/
+      application-questions.md  full question list, rubrics, real examples
+      critique-rubric.md        partner-mindset checklist
+      interview-prep.md         format, question bank, what not to do
+      reapplying.md             "what changed" strategy + implicit signal detection
+      successful-applications.md Dropbox S07 + Basedash S20 annotated
+      video-and-demo.md         founder video guidelines
+      yc-context.md             batch structure, deal terms, RFS, partners
+  founder-profile/
+    SKILL.md                    discovery + angle analysis
+  form-fill/
+    SKILL.md                    Playwright form filler
 evals/
-  evals.json                   test cases for eval loop
+  evals.json                    5 test cases
+  inputs/                       3 real accepted applications (Flex S16, OpenPhone S18, Muse W12)
 docs/
-  sources.md                   all citation URLs + refresh schedule
+  sources.md                    all citation URLs + refresh schedule
 ```
 
 ## License
