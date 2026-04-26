@@ -32,3 +32,5 @@
 2026-04-26 21:46 : audit: eval coverage skewed -- all 5 evals hit yc-application only; zero coverage for onboarding routing, handoff, form-fill; evals not in CI — @fatih
 2026-04-26 21:46 : audit: mode 0 draft-from-scratch has no guard -- runs with zero founder context if yc-application invoked directly; add bounce-back check — @fatih
 2026-04-26 21:46 : report: full takeover saved to .reports/apex-takeover-2026-04-26-1800.html -- 1 CRIT, 2 HIGH, 5 INFO; ~4.5 hr total fix effort — @fatih
+2026-04-26 21:46 : feat(yc-context): add YC AI-native doctrine section -- 7 concepts from YC source: AI-as-OS, closed loops, queryable company, software factories, no human middleware, token-max, 3 archetypes — @fatih
+2026-04-26 21:46 : feat(critique-rubric): add AI-native signal check -- 5 signals to scan before question-by-question pass; catches "we use AI to..." framing vs OS-level integration — @fatih
