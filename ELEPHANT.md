@@ -25,3 +25,4 @@
 2026-04-26 20:35 : test(skills): test apply-yc by running in this repo (not fresh folder) — faster fix cycle; trigger via "I want to apply to YC" or `/onboarding` — @fatih
 2026-04-26 20:37 : fix: marketplace.json missing description/category/url fields — @fatih
 2026-04-26 20:41 : [!!] git: local main diverged from dev/main at df0f732 -- local has 3 memory-engrave commits, remote has 4 feature commits (v0.3.0, marketplace, RFS); fix: `git rebase dev/main` -- @fatih
+2026-04-26 20:55 : fix: marketplace.json source "." -> "./" -- schema requires trailing slash; was causing `plugins.0.source: Invalid input` on `claude plugin marketplace add` — @fatih
