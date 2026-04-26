@@ -28,3 +28,7 @@
 2026-04-26 20:55 : fix: marketplace.json source "." -> "./" -- schema requires trailing slash; was causing `plugins.0.source: Invalid input` on `claude plugin marketplace add` — @fatih
 2026-04-26 21:02 : fix: marketplace top-level name apply-yc -> thisisfatih — @fatih
 2026-04-26 21:04 : fix: plugin.json author.name missing + remove invalid skills array — @fatih
+2026-04-26 21:46 : [!!] takeover recon: FOUNDER_PROFILE inter-skill contract undefined -- form-fill depends on schema that founder-profile never defines; fix in ~30 min -- @fatih
+2026-04-26 21:46 : audit: eval coverage skewed -- all 5 evals hit yc-application only; zero coverage for onboarding routing, handoff, form-fill; evals not in CI — @fatih
+2026-04-26 21:46 : audit: mode 0 draft-from-scratch has no guard -- runs with zero founder context if yc-application invoked directly; add bounce-back check — @fatih
+2026-04-26 21:46 : report: full takeover saved to .reports/apex-takeover-2026-04-26-1800.html -- 1 CRIT, 2 HIGH, 5 INFO; ~4.5 hr total fix effort — @fatih
