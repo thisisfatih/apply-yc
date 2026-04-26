@@ -41,3 +41,4 @@
 2026-04-26 22:09 : rule: CLAUDE.md versioning rule added -- plugin.json + README badge + CHANGELOG must match; update all three in same commit — @fatih
 2026-04-26 22:13 : fix(git): local main diverged again -- 2 memory-engrave commits not in remote; squashed into PR #8; resolved via `git reset --hard dev/main` (no data loss, ELEPHANT.md identical) — @fatih
 2026-04-26 22:17 : fix: restore marketplace name to apply-yc — @fatih
+2026-04-26 22:17 : fix: marketplace.json top-level name reverted thisisfatih -> apply-yc; PR #9 open on fix/marketplace-name — @fatih
