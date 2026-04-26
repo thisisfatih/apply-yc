@@ -12,7 +12,7 @@ Built on Paul Graham's "How to Apply" essay, partner advice (Seibel, Tan, Caldwe
 
 ```bash
 claude plugin marketplace add thisisfatih/apply-yc
-claude plugin install apply-yc@thisisfatih
+claude plugin install apply-yc@apply-yc
 ```
 
 ---
