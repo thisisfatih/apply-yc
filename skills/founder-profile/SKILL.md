@@ -179,6 +179,116 @@ Flag these explicitly if present. Do not proceed to drafting until the founder h
 
 ---
 
+## FOUNDER_PROFILE Output Schema
+
+After Phase 2 is confirmed, output the full `FOUNDER_PROFILE` block below. This is the data contract consumed by `form-fill` - every field must be populated or marked `TBD` (never left absent). Pull values from discovery; use `TBD` for anything the founder has not yet provided.
+
+One `founders` entry per person on the application. Co-founder fields (`how_long_known`, `how_met`, `met_in_person`, `project_together`, `looking_for_cofounder`) only apply when there is more than one founder.
+
+```
+FOUNDER_PROFILE
+===============
+
+## Founders
+
+- name:
+- email:
+- age:
+- phone: [country code + number]
+- gender:
+- city:
+- title: [CEO / CTO / etc.]
+- equity_percent:
+- technical_founder: [yes / no]
+- in_school: [yes / no]
+- exclusive_commitment: [yes / no]
+- linkedin_url:
+- education: [school, degree, dates - one per line]
+- work_history: [company, role, dates - one per line]
+- personal_website:
+- github_url:
+- twitter_url:
+- wildcard_hack: [the non-computer system hacking story]
+- most_impressive_thing: [1-2 sentences, not the current startup]
+- things_built: [apps, sites, OSS with URLs]
+- competitions_awards: [patents, grants, press if any]
+
+(repeat block for each co-founder)
+
+## Team
+
+- who_writes_code: [name(s) and what they built; any contractor work]
+- how_long_known: [e.g. "3 years"]
+- how_met: [e.g. "college roommates"]
+- met_in_person: [yes / no]
+- project_together: [what you built together, with URL if any]
+- looking_for_cofounder: [yes / no]
+
+## Company
+
+- company_name:
+- pitch_50_char: [50 chars or fewer - count before filling]
+- company_url:
+- demo_url: [or TBD if none]
+- product_description: [what it does, 2-4 sentences]
+- location_current: [city, country]
+- location_post_yc: [city, country]
+- location_reasoning: [1-2 sentences]
+
+## Progress
+
+- how_far_along: [idea / prototype / live / revenue - with specifics]
+- working_duration: [e.g. "6 months, full-time since March"]
+- tech_stack: [languages, frameworks, infra, AI models, AI coding tools]
+- users_active:
+- users_paying:
+- top_customer_and_amount: [who pays most and how much]
+- has_revenue: [yes / no]
+- monthly_revenue: [Month1: $X, Month2: $X ... last 6 months oldest first]
+- revenue_sources: [if multiple]
+- revenue_notes: [grants, pilots, one-time events - or TBD]
+- reapply_change: [what changed since last app - or N/A]
+- incubator: [name, dates - or N/A]
+
+## Idea
+
+- why_this_idea: [domain expertise, personal need, insight]
+- competitors: [named competitors + what you understand that they don't]
+- monetization: [how you make or will make money]
+- category: [closest YC category]
+- other_ideas: [1-3 alternatives considered]
+
+## Equity
+
+- legal_entity: [yes/no - if yes: type, state/country, date incorporated]
+- equity_description: [Name (Title) X%, Name (Title) Y%, option pool Z%]
+- has_investment: [yes / no]
+- investments: [name, amount, cap, type, date - one per line - or N/A]
+- total_raised_usd:
+- money_in_bank_usd:
+- monthly_burn_usd:
+- runway: [e.g. "8 months"]
+- currently_fundraising: [yes / no]
+
+## Application Context
+
+- why_yc: [what convinced them to apply, referral, events attended]
+- how_heard: [e.g. "Twitter / friend referral / YC blog"]
+
+## Narrative (from Phase 2 - for yc-application use)
+
+- angle_1: [most impressive specific thing]
+- angle_2: [second strongest signal]
+- angle_3: [third strongest signal]
+- narrative_spine: [1-2 sentences: who + why them + why traction is credible]
+- door_openers: [1-2 things that will get past first filter]
+- rfs_alignment: [none / naturally fits "[theme]" / forced-fit - do not use]
+- partner_flags: [risks to address in the application]
+- instant_reject_risks: [blockers to fix before drafting - or NONE]
+```
+
+---
+
 ## Handoff
 
 After the founder confirms the angle analysis (or corrects it), hand off:

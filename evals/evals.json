@@ -1,30 +1,64 @@
 {
-  "skill_name": "yc-application",
   "evals": [
     {
       "id": 1,
+      "skill": "yc-application",
       "prompt": "Help me draft the 50-character pitch and the 'what is your company going to make' answer. My company is an AI tool that auto-generates legal contracts for SaaS companies. We have 12 customers paying $200/mo. Two technical co-founders, both ex-Stripe.",
       "expected_output": "Two crisp pitch variants under 50 chars. 2-4 sentence product description with X-but-Y framing or matter-of-fact concrete description. No buzzwords."
     },
     {
       "id": 2,
+      "skill": "yc-application",
       "prompt": "Critique this answer to 'most impressive thing': 'Our team has decades of combined experience building world-class products at top tech companies. We are exceptionally driven and uniquely positioned to win this market.'",
       "expected_output": "Flag every adjective. Identify it as exact pattern Paul Graham warns against. Ask for specific verifiable achievements. Offer rewrite pattern."
     },
     {
       "id": 3,
+      "skill": "yc-application",
       "prompt": "I got a YC interview next Friday for the Summer 2026 batch. What should I do to prepare?",
       "expected_output": "Reference interview-prep.md. Tell them NOT to over-prepare. Highest leverage = ship something between now and interview. Provide question bank. Numbers cold. 10-min format."
     },
     {
       "id": 4,
+      "skill": "yc-application",
       "prompt": "I applied last batch with the same idea and got rejected. Should I reapply this batch?",
       "expected_output": "Pull from reapplying.md. Conditional: reapply if material progress shipped, else wait. Explicit guidance on 'what changed' question. Honest framing."
     },
     {
       "id": 5,
+      "skill": "yc-application",
       "prompt": "What's a YC RFS and should I tailor my application to one?",
       "expected_output": "Explain RFS = Requests for Startups. Don't reverse-engineer company to match. Mention if natural fit. Reference yc-context.md. Don't fabricate Spring 2026 list."
+    },
+    {
+      "id": 6,
+      "skill": "onboarding",
+      "prompt": "I want to apply to YC. I've never applied before and I don't have a draft yet.",
+      "expected_output": "Route to founder-profile skill. Do NOT jump straight to drafting. Explain the three-phase process: discovery first, then drafting, then form-fill. Warm, direct."
+    },
+    {
+      "id": 7,
+      "skill": "onboarding",
+      "prompt": "I already have a draft YC application. I just need someone to look it over.",
+      "expected_output": "Route to yc-application skill in critique mode (mode 2). Do not restart discovery from scratch. Ask for the draft."
+    },
+    {
+      "id": 8,
+      "skill": "yc-application",
+      "prompt": "Help me write my YC application. My startup is a B2B SaaS for restaurants.",
+      "expected_output": "Detect no FOUNDER_PROFILE present. Do NOT start drafting immediately. Either invoke founder-profile or ask if they want to run it first. Should not produce draft answers without context."
+    },
+    {
+      "id": 9,
+      "skill": "founder-profile",
+      "prompt": "Let's start my YC application. I'm the solo founder. I've applied once before with the same idea - applied to S25, got rejected, no interview feedback.",
+      "expected_output": "Phase 0: identify as Scenario A reapplication. Ask what changed since S25. Do NOT ask all discovery questions at once. Follow Phase 0 script: batch, idea, interview, feedback."
+    },
+    {
+      "id": 10,
+      "skill": "form-fill",
+      "prompt": "Fill out my YC application form now.",
+      "expected_output": "Check prerequisites: FOUNDER_PROFILE present? Logged in? Playwright connected? If any missing, stop and say what's needed. Do not attempt to navigate to the form without all three."
     }
   ]
 }
