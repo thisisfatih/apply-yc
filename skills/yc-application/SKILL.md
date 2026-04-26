@@ -61,6 +61,12 @@ These are not rules to recite to the user - they are the lens through which Clau
 
 **Concise. Then more concise.** Print the application, take a red pen, cross out every word you don't need. Most answers should be 1-3 sentences. The first sentence of every answer is a TL;DR. Every word that doesn't pull weight is subtracting from the words that do.
 
+**Compression by question type.** Reviewers scan 100+ applications. Match compression to what each question is actually asking:
+
+- **Ultra** (fragment mode, numbers-first, no sentences needed): 50-char pitch, "how far along", "how long working on this", tech stack, revenue context note. The Dropbox model: "Prototype done in Feb. Beta in people's hands now. Version I can charge for: 6-8 weeks." No articles, no filler - just signal.
+- **Full** (no articles, fragments OK, direct): product description, most impressive thing per founder, who writes code, competitors, why this idea, other ideas considered. First sentence = TL;DR. Everything else earns its place or gets cut.
+- **Lite** (no filler or hedging, keep full sentences): co-founder relationship, how you make money, wildcard hack question, why apply to YC. These need narrative context but still zero fluff.
+
 **Each answer stands alone.** Partners may not read in order, may skim, may stop mid-application. Don't write "as mentioned above." Each answer must work on its own.
 
 **Numbers, dates, names - wherever possible.** "300 signups, $30/mo revenue, launched on Product Hunt in May" beats "early traction, growing." The rule isn't "have impressive numbers" (the Basedash S20 application that got in had $30/month in revenue). The rule is: state the actual numbers you have, not feelings about them.

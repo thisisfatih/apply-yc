@@ -55,14 +55,16 @@ Garry Tan (current CEO) and the partners have been explicit about current priori
 
 YC's RFS list signals what they actively want to see applications for. The Spring 2026 themes:
 
-- **Cursor for Product Managers** (Diana Hu) - vertical AI for PMs
+- **Cursor for Product Managers** (Diana Hu) - AI-native system for PMs: analyze customer interviews/usage data, propose UI changes and dev tasks
 - **AI-Native Hedge Funds** (Garry Tan) - agent swarms doing investment research, thesis formation, and execution
-- **AI-Native Agencies** (Eric Migicovsky) - replacing the human-labor model of marketing/creative agencies
-- **Stablecoin Financial Services** (Anu Hariharan) - financial products on stablecoin rails
-- **AI for Government** (Jared Friedman) - government workflows, public sector software
-- **Modern Metal Mills** (Gustaf Alströmer) - re-shoring industrial production with software-driven manufacturing
-- **AI Guidance for Physical Work** (Jared Friedman) - AR/voice coaching for physical labor
-- **Infra for Government Fraud Hunters** - anti-fraud tooling for public sector
+- **AI-Native Agencies** (Eric Migicovsky) - service businesses using AI to hit software margins on creative/marketing work
+- **Stablecoin Financial Services** (Anu Hariharan) - financial products on stablecoin rails: yield, tokenized assets, cross-border payments
+- **AI for Government** (Jared Friedman) - intelligent automation for government form processing and digital workflows
+- **Modern Metal Mills** (Gustaf Alströmer) - software/automation re-shoring American metal manufacturing; compress lead times, cut energy costs
+- **AI Guidance for Physical Work** (Jared Friedman) - real-time vision + coaching for skilled physical labor
+- **Large Spatial Models** - foundation models for robust spatial reasoning about physical objects and environments
+- **Infra for Government Fraud Hunters** - software accelerating False Claims Act investigations; evidence organization and document analysis
+- **Make LLMs Easy to Train** - developer tools simplifying LLM training: better APIs, datasets, ML-focused dev environments
 
 **How to use the RFS:** Don't reverse-engineer your company to match an RFS. But if your company *naturally* fits one, mention it. It's a positive signal that a partner has actively put weight behind that domain.
 
