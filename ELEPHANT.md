@@ -27,3 +27,4 @@
 2026-04-26 20:41 : [!!] git: local main diverged from dev/main at df0f732 -- local has 3 memory-engrave commits, remote has 4 feature commits (v0.3.0, marketplace, RFS); fix: `git rebase dev/main` -- @fatih
 2026-04-26 20:55 : fix: marketplace.json source "." -> "./" -- schema requires trailing slash; was causing `plugins.0.source: Invalid input` on `claude plugin marketplace add` — @fatih
 2026-04-26 21:02 : fix: marketplace top-level name apply-yc -> thisisfatih — @fatih
+2026-04-26 21:04 : fix: plugin.json author.name missing + remove invalid skills array — @fatih

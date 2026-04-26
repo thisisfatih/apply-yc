@@ -3,13 +3,11 @@
   "version": "0.3.0",
   "description": "Help founders write, draft, critique, and auto-fill their Y Combinator application.",
   "author": {
-    "email": "fatih@fatihunver.com"
+    "name": "thisisfatih",
+    "email": "fatih@fatihunver.com",
+    "url": "https://github.com/thisisfatih"
   },
-  "keywords": ["yc", "ycombinator", "startup", "application", "fundraising"],
-  "skills": [
-    "skills/onboarding/SKILL.md",
-    "skills/yc-application/SKILL.md",
-    "skills/founder-profile/SKILL.md",
-    "skills/form-fill/SKILL.md"
-  ]
+  "repository": "https://github.com/thisisfatih/apply-yc",
+  "license": "MIT",
+  "keywords": ["yc", "ycombinator", "startup", "application", "fundraising"]
 }
