@@ -1,0 +1,15 @@
+{
+  "name": "apply-yc",
+  "owner": {
+    "name": "thisisfatih",
+    "email": "fatih@fatihunver.com"
+  },
+  "plugins": [
+    {
+      "name": "apply-yc",
+      "source": ".",
+      "description": "Help founders write, draft, critique, and auto-fill their Y Combinator application.",
+      "version": "0.3.0"
+    }
+  ]
+}
