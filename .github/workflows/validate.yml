@@ -12,24 +12,32 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: SKILL.md line count (max 500)
+      - name: SKILL.md line count (max 500 per skill)
         run: |
-          lines=$(wc -l < skills/yc-application/SKILL.md)
-          echo "SKILL.md: $lines lines"
-          if [ "$lines" -gt 500 ]; then
-            echo "FAIL: SKILL.md exceeds 500-line limit ($lines lines)"
-            exit 1
-          fi
+          failed=0
+          for skill_file in skills/*/SKILL.md; do
+            lines=$(wc -l < "$skill_file")
+            echo "$skill_file: $lines lines"
+            if [ "$lines" -gt 500 ]; then
+              echo "FAIL: $skill_file exceeds 500-line limit ($lines lines)"
+              failed=1
+            fi
+          done
+          exit $failed
 
-      - name: Skill description length (max 1024 chars)
+      - name: Skill description length (max 1024 chars per skill)
         run: |
-          desc=$(awk '/^description:/{found=1; sub(/^description: */,""); print; next} found && /^[a-z]/{exit} found{print}' skills/yc-application/SKILL.md | tr -d '\n')
-          len=${#desc}
-          echo "Description: $len chars"
-          if [ "$len" -gt 1024 ]; then
-            echo "FAIL: description exceeds 1024-char limit ($len chars)"
-            exit 1
-          fi
+          failed=0
+          for skill_file in skills/*/SKILL.md; do
+            desc=$(awk '/^description:/{found=1; sub(/^description: */,""); print; next} found && /^[a-z]/{exit} found{print}' "$skill_file" | tr -d '\n')
+            len=${#desc}
+            echo "$skill_file description: $len chars"
+            if [ "$len" -gt 1024 ]; then
+              echo "FAIL: $skill_file description exceeds 1024-char limit ($len chars)"
+              failed=1
+            fi
+          done
+          exit $failed
 
       - name: No em dashes in skill files
         run: |
@@ -44,10 +52,23 @@ jobs:
           python3 -m json.tool evals/evals.json > /dev/null
           echo "evals/evals.json: valid JSON"
 
-      - name: YAML frontmatter present in SKILL.md
+      - name: YAML frontmatter present in all SKILL.md files
         run: |
-          head -1 skills/yc-application/SKILL.md | grep -q "^---$" || {
-            echo "FAIL: SKILL.md missing YAML frontmatter"
-            exit 1
-          }
-          echo "Frontmatter present"
+          failed=0
+          for skill_file in skills/*/SKILL.md; do
+            head -1 "$skill_file" | grep -q "^---$" || {
+              echo "FAIL: $skill_file missing YAML frontmatter"
+              failed=1
+            }
+          done
+          exit $failed
+
+  eval-coverage:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push'
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Eval structure and coverage validation
+        run: |
+          python3 evals/validate_evals.py

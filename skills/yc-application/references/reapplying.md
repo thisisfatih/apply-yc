@@ -1,5 +1,7 @@
 # Reapplying to YC
 
+> **Ownership:** Scenario determination (A/B/C/D/E) is done in `founder-profile` Phase 0. If a FOUNDER_PROFILE block is present in context, read `reapply_change` and the scenario type from there - do not re-ask questions the founder already answered in discovery. This file is the *drafting* guide. `founder-profile` is the *discovery* guide.
+
 Roughly 30% of accepted YC founders applied at least once before getting in. Reapplying is normal and not a disadvantage if handled well. The "what changed since last time" question is the single biggest opportunity in a re-application.
 
 ## Reapplying is not a disadvantage

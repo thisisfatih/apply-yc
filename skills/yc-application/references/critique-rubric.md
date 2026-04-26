@@ -141,6 +141,22 @@ If this is a reapplication (explicit or implicit):
 - Every progress number should be read as a delta: current state vs. state at last application.
 - If the "amusing discovery" or any other field references a prior YC interview, note it; the founder may not realize they've signaled it.
 
+## AI-native company signal check
+
+For any company that describes itself as AI-native (or should), scan the draft for these signals before the question-by-question pass. Missing signals are flags - not failures, but worth flagging.
+
+**AI-as-OS signal** - Does the application treat AI as the company's operating layer, or just as a feature? Red flag: "we use AI to..." framing with no sense that the whole company is structured around it.
+
+**Token-max signal** - Does the team size + what they've shipped suggest they're running lean by design? A 2-person team with a working product is a strong signal. A 2-person team with "we're planning to build" is not.
+
+**Closed-loop signal** - Is there any mention of how the company measures and improves itself? Not required, but strong when present.
+
+**Queryable company signal** - Does the founder have a clear picture of how they stay operationally fast? For AI companies applying to YC, "we're 3 people and we move fast" should have specifics.
+
+**Founder-as-AI-operator signal** - Is the founder clearly using AI tools themselves to build (not just selling AI)? Confirmed by: AI coding tool mentioned in stack, agent session export uploaded, shipped product with tiny team.
+
+**Don't lecture.** If these signals are absent, flag the specific answer where they'd fit and offer a rewrite. Don't add a paragraph to every answer.
+
 ## Final pass
 
 After question-by-question critique, do these holistic checks:

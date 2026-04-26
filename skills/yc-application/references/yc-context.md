@@ -51,6 +51,31 @@ Garry Tan (current CEO) and the partners have been explicit about current priori
 
 **5. AI coding tool fluency.** Summer 2026 is the first batch with an explicit form question asking for your tech stack *including AI models and AI coding tools* (Claude Code, Cursor, Copilot, etc.), plus an optional upload of a coding agent session export. YC added this to surface founders who treat AI tooling as core infrastructure, not an add-on. If you use Claude Code or Cursor heavily, this is a direct competitive advantage in the application itself.
 
+## YC's AI-native company doctrine (2025-2026)
+
+YC has published specific doctrine on what "AI-native" means operationally. These concepts come up in interviews and are strong signals in applications. Founders building AI-native companies should be able to speak to these fluently.
+
+**AI as operating system, not tool.** AI should not be a tool your company uses - it should be the OS your company runs on. Every workflow, decision, and process flows through an intelligent layer. The right person with AI tools can now build features that used to require an entire team.
+
+**Closed loops everywhere.** Old companies ran as open loops: make a decision, execute it, don't systematically measure the outcome. A closed loop is self-regulating: it continuously monitors output and adjusts to better meet the stated goal. Every important process should be captured by an intelligent closed loop that captures information, feeds it back, and improves over time.
+
+**Make your company queryable.** The whole organization should be legible to AI. Every important action should produce an artifact that the intelligence at the center of the company can learn from. Record meetings with AI notetakers, minimize DMs and emails, embed agents in communications, build custom dashboards for everything (revenue, sales, engineering, hiring, ops). Provide models with as much context as you would provide an employee.
+
+**Software factories.** The next evolution of test-driven development. Humans write a spec and a set of tests that define success, then AI agents generate the implementation and iterate until the tests pass. The human defines what to build and judges the output; actual code is the agent's job. Some companies already have repos that contain no handwritten code, just specs and test harnesses.
+
+**No more human middleware.** The classic management hierarchy no longer makes sense. If your company is queryable, artifact-rich, and legible to AI, you should have almost no human middleware. Your company's velocity is only as fast as its information flow - every layer of human routing you remove is a direct speed gain.
+
+**Token-max, not headcount-max.** Maximizing token usage, not headcount, is the critical shift. The best companies will be the ones that are token-maxing. Be willing to run an uncomfortably high API bill because it's replacing what would have taken a far more expensive and inflated headcount. Dramatically leaner engineering, design, HR, and admin teams.
+
+**The early-stage advantage.** Startups don't have legacy systems, org charts, or thousands of people to retrain. Existing companies have to maintain a live product while unwinding years of standard operating procedures. Startups can design their systems, workflows, and culture around AI from the start, and can operate a thousand times faster than the incumbents. You cannot outsource your conviction on the power of these tools - you need to develop it yourself by actually sitting with coding agents and using them.
+
+**Three employee archetypes (per Jack Dorsey, widely cited at YC):**
+- *IC / builder-operator:* directly makes and runs things. Not limited to engineers. Everyone builds. Everyone comes to meetings with working prototypes, not pitch decks.
+- *DRI (directly responsible individual):* focused on strategy and customer outcomes. Not a classic manager. One person, one outcome, no hiding.
+- *AI founder:* still builds, still coaches, leads by example. If you're the founder, this needs to be you at the forefront - not delegating your AI strategy to someone else.
+
+**How to use this in the application:** These concepts belong in answers about *why you'll win* (D1, D3) and *how you operate* (B section, team, co-founder story). Don't name-drop "token-max" as a buzzword - demonstrate it with specifics: your team size, your API bill, what you've shipped without a full engineering team.
+
 ## Spring 2026 Requests for Startups (from ycombinator.com/rfs)
 
 YC's RFS list signals what they actively want to see applications for. The Spring 2026 themes:

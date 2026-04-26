@@ -227,15 +227,23 @@ After filling:
 
 Before the founder submits:
 
-1. Take screenshot of the top of the application
-2. Run final check:
-   - Any fields left blank that shouldn't be? Flag them.
+1. **Completeness check** - before taking any screenshot, compare the FOUNDER_PROFILE block against every required field in this skill. Flag any field that is: (a) absent from the profile, (b) an empty string, (c) `TBD`, or (d) `N/A` when the question is not optional. List each gap with the field name and section. Do not proceed to step 2 until the founder has resolved or explicitly accepted each gap.
+
+   Required fields that must not be blank or TBD at submission:
+   - `pitch_50_char`, `product_description`, `how_far_along`, `working_duration`, `tech_stack`
+   - `why_this_idea`, `competitors`, `monetization`
+   - `equity_description`, `legal_entity`
+   - `why_yc`, `how_heard`
+   - Each founder: `name`, `email`, `most_impressive_thing`, `who_writes_code`
+
+2. Take screenshot of the top of the application
+3. Run final check:
    - Any `TBD` values that were never filled? Flag them.
    - 50-char pitch within limit?
    - Founder video uploaded?
    - Founder profile(s) complete?
 
-3. Output:
+4. Output:
 ```
 Pre-submit checklist:
 [ ] 50-char pitch: [value] ([N] chars)
