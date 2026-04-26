@@ -102,7 +102,9 @@ Repeat for each additional co-founder.
 After returning to main application:
 
 - **"Who writes code, or does other technical work on your product? Was any of it done by a non-founder? Please explain."** - be specific: name the founder(s), what they built, any contractor work
-- **"Are you looking for a cofounder?"** - fill only if actively looking; if team is complete, leave blank or answer appropriately
+- **"Are you looking for a cofounder?"** - fill only if actively looking; leave blank if team is complete
+- **"How long have the founders known one another and how did you meet? Have any of the founders not met in person?"** - appears when a second founder is on the application (confirmed). Single textbox covering all three sub-questions.
+- **"Please tell us about an interesting project or thing you have built or achieved together."** - appears after co-founder accepts invite and completes profile. Include URLs.
 
 After filling:
 - Take screenshot

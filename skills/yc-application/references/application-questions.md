@@ -84,11 +84,18 @@ The technical-founder check. Best answer: a founder wrote everything. If contrac
 ### "Are you looking for a cofounder?"
 Fill if actively seeking. Leave blank or answer "no" if team is complete.
 
-### Co-founder questions (appear when second founder is added)
-When you add a co-founder, additional questions appear:
-- Interesting project two or more of you created together (include URLs - if nothing, that's a gap)
-- How long have the founders known one another and how did you meet?
-- Have any of the founders not met in person?
+### Co-founder questions (appear when second founder slot is opened)
+
+**Confirmed:** "How long have the founders known one another and how did you meet? Have any of the founders not met in person?" - single combined textbox, appears immediately when a second founder is being added.
+
+**Likely appears after co-founder accepts invite and completes profile:** "Please tell us about an interesting project or thing you have built or achieved together." - cannot verify without a real co-founder on the account. Include URLs. If you have nothing built together, that's a gap - address it directly.
+
+**Co-founder invite mechanics:** Adding a co-founder requires a real email. YC sends an invite. The co-founder must accept and complete their own profile. Equity requirement: "To be considered a founder, a person must own at least 10% equity in the company."
+
+Rubric for "how long have you known each other":
+- Long-term friendship + shipped work together = strongest signal
+- Recent introduction = not disqualifying, but the bar on shared shipped work is higher
+- Never met in person = yellow flag. Address when you'll meet.
 
 ---
 
