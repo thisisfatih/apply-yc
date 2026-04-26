@@ -136,6 +136,8 @@ Summer 2026 has an explicit form question asking for tech stack including AI mod
 
 After discovery, before any drafting, output this block and ask the founder to confirm or correct it.
 
+Check `references/yc-context.md` for the current RFS list before filling in "RFS alignment" below. Rule: if the company *naturally* fits a theme, name it and flag it as a positive signal to surface in the application. If it only fits with a stretch, mark it forced-fit and don't use it.
+
 ```
 ## YC Angle Analysis
 
@@ -152,6 +154,9 @@ to build this + what makes the traction credible]
 [The 1-2 things that, if communicated clearly, will get this past
 the first filter. Usually: the most impressive founder achievement
 + the clearest possible product description.]
+
+**RFS alignment:**
+[none / naturally fits "[theme name]" - mention in application / forced-fit - do not force]
 
 **What a YC partner will flag (address in the application):**
 - [risk/gap 1 and how to address it]

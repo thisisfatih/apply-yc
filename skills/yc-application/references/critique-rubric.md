@@ -145,6 +145,11 @@ If this is a reapplication (explicit or implicit):
 
 After question-by-question critique, do these holistic checks:
 
+**The compression check.** Reviewers scan 100+ applications. Each answer needs the right compression level:
+- **Ultra** (50-char pitch, how far along, how long working on it, tech stack, revenue context): should read like notes, not sentences. "Prototype done Feb. 14 paying customers. $400 MRR." If it has articles and filler, compress harder.
+- **Full** (product description, impressive thing, who writes code, competitors, why this idea): no articles, fragments OK, no hedging. First sentence = standalone TL;DR. Every sentence after earns its place.
+- **Lite** (co-founder story, how you make money, wildcard hack, why YC): full sentences, but zero filler. No "we believe", "we feel", "we think". State, don't hedge.
+
 **The "red pen" pass.** Print mentally. Cross out every word that doesn't pull weight. Specifically watch for: leverage, synergy, next-generation, revolutionize, transform, AI-powered (without concrete content), platform (when "tool" or "product" would do), seamless, world-class, best-in-class, cutting-edge.
 
 **The "stand alone" check.** Pick any 3 questions at random. Read just those answers. Do they make sense without the others? They should - partners may not read in order.
