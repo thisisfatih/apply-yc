@@ -134,12 +134,12 @@ See `video-and-demo.md`. Most common failures: too long, too produced, missing c
 
 ## Reapplication check (do this first, before question-by-question)
 
-Before going question-by-question, scan the full draft for reapplication signals. See `reapplying.md` — Detecting implicit reapplication signals.
+Before going question-by-question, scan the full draft for reapplication signals. See `reapplying.md`, section "Detecting implicit reapplication signals".
 
 If this is a reapplication (explicit or implicit):
 - The "what changed since last time" field becomes the most important question on the application. If it's empty or says N/A, flag it before anything else.
 - Every progress number should be read as a delta: current state vs. state at last application.
-- If the "amusing discovery" or any other field references a prior YC interview, note it — the founder may not realize they've signaled it.
+- If the "amusing discovery" or any other field references a prior YC interview, note it; the founder may not realize they've signaled it.
 
 ## Final pass
 
