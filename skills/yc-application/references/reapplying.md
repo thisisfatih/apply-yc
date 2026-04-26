@@ -13,7 +13,7 @@ Founders who got in after multiple tries:
 
 YC explicitly says: "It's very common for teams to take our feedback, re-apply the following batch and get accepted."
 
-## The two reapply scenarios
+## The five reapply scenarios
 
 ### Scenario A: Same idea, more progress
 If the company is the same and has shipped, grown, or learned things since the last application: lead with the progress.
@@ -40,6 +40,55 @@ If the company pivoted, this question is asking *why*, and what you learned.
 
 **Strong example pattern:**
 > We applied last [batch] with [previous company doing X]. We launched, got [specific data], and learned [specific insight]. That insight led us to [new company]. The connection: [the through-line in your domain expertise or user base].
+
+### Scenario C: Returning founder, new co-founders joined
+
+The returning founder's history applies. New co-founders are a positive signal if framed correctly - they joined because the company needed a specific capability, not to game the "no technical co-founder" rejection.
+
+**Rubric:**
+- 2-4 sentences.
+- Name the gap that existed at the previous application ("we had no one who could build the ML pipeline ourselves").
+- Explain why this specific person joined - not just their credentials, but why now and why them.
+- Flag if they've shipped anything together yet. Partners weight co-founder chemistry on real work, not on promises.
+
+**Strong example pattern:**
+> Last time we applied, [returning founder] was solo/with [previous team]. Since then [new co-founder] joined. [New co-founder] brings [specific capability] we were missing - [they built X / shipped Y / have Z years doing this specific thing]. Together we've [built X / launched Y / shipped Z] in the [N] months since they joined.
+
+**Watch out for:**
+- Adding a co-founder who has no track record together with the returning founder. Partners will ask "how long have you worked together?" - if the answer is "2 months," it reads as a patch.
+- Adding a technical co-founder only to check the box. Did they actually commit to building full-time?
+
+### Scenario D: Returning founder, completely new company and idea
+
+Maximum transparency is required. Partners will see the prior company in their records regardless. Do not hide it or minimize it.
+
+The previous startup is now an asset for the "impressive thing" answer - a failed startup that shipped something real counts as a hard thing you've done.
+
+**Rubric:**
+- 3-5 sentences.
+- State the prior company and what it did.
+- Explain honestly why it ended: ran out of runway, market too small, team broke up, learned it was wrong. Be specific.
+- Connect what you learned to why you're building the new thing. The through-line must be genuine, not reverse-engineered.
+- State what you've built or shipped so far on the new idea.
+
+**Strong example pattern:**
+> I previously applied with [prior company] in [batch]. We built [X], got to [state], and shut down because [honest reason]. From that experience I learned [specific insight]. That led me to [new company] - [through-line explaining why this is the logical next thing]. Since starting [new company] [N months ago], we've [shipped X / reached Y / signed Z].
+
+**Watch out for:**
+- Vague "we decided to pursue a bigger opportunity" explanation for why the prior idea ended. Partners read this as "we couldn't make it work and don't want to say so."
+- Treating the prior company as completely separate from the new one with no learning connecting them. Even if they're in different markets, there should be founder-level learning that applies.
+
+### Scenario E: Mixed team - some returning, some new founders
+
+The returning founders' history applies. New co-founders have no YC history but their joining is a positive signal that should be explained.
+
+**Rubric:**
+- 4-6 sentences total across the reapplication context.
+- Cover the returning founders per Scenario A, B, or D above (depending on whether the idea changed).
+- Then address the new co-founders: why they joined, what they add, what you've shipped together.
+
+**Strong example pattern:**
+> [Returning founder] applied last [batch] with [idea/same idea]. [Returning founder's what-changed: progress or pivot or both]. Since then [new co-founder(s)] joined - [what each brings, why now]. Together we've [first thing shipped together as a full team].
 
 ## Using prior YC feedback
 
