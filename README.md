@@ -18,17 +18,12 @@ Built on Paul Graham's "How to Apply" essay, partner advice from Michael Seibel 
 
 ## Install
 
-### Claude Code (plugin)
-
 ```bash
-git clone https://github.com/fatih-unver/apply-yc ~/.claude/plugins/apply-yc
+claude plugin marketplace add thisisfatih/apply-yc
+claude plugin install apply-yc@thisisfatih
 ```
 
-Then restart Claude Code. The skill triggers automatically on YC-related prompts.
-
-### Manual (.skill file)
-
-Download `apply-yc.skill` from the latest release and drag into Claude.ai or your Claude Code skills folder.
+The skill triggers automatically on YC-related prompts. No configuration needed.
 
 ## Build from source
 
