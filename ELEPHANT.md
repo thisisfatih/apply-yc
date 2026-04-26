@@ -21,4 +21,5 @@
 2026-04-26 18:24 : docs: add shields.io badges to README (version 0.2.0, MIT, Claude Code platform) — @fatih
 2026-04-26 18:28 : feat: add marketplace.json to enable claude plugin marketplace add — @fatih
 2026-04-26 20:24 : feat: RFS alignment in Phase 2 + caveman compression guide for application answers — @fatih
+2026-04-26 20:31 : fix(install): `claude plugin marketplace add` wrong command for single plugin -- use `claude plugin add thisisfatih/apply-yc` — @fatih
 2026-04-26 20:37 : fix: marketplace.json missing description/category/url fields — @fatih
