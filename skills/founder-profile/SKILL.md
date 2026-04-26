@@ -17,7 +17,7 @@ YC tracks founders, not companies. A partner sees your full application history 
 
 First question, always:
 
-"Has anyone on your founding team applied to YC before — with any idea, under any company name?"
+"Has anyone on your founding team applied to YC before - with any idea, under any company name?"
 
 **If no one has:** proceed to Phase 1. True first application.
 
@@ -31,7 +31,7 @@ First question, always:
 - Did they get an interview? If yes, what feedback came out of it?
 - Did YC send written rejection feedback? What did it say specifically?
 
-### Determine scenario — each has a different narrative strategy
+### Determine scenario - each has a different narrative strategy
 
 **Scenario A: Same founders, same idea, more progress**
 Classic reapplication. The "what changed" question is the biggest opportunity.
@@ -41,7 +41,7 @@ Classic reapplication. The "what changed" question is the biggest opportunity.
 - Flag if nothing material changed: "Same application, same state = same result. What can you ship before this deadline?"
 
 **Scenario B: Same founders, pivoted to new idea**
-Still a reapplication. The pivot IS the answer to "what changed" — but it needs to be a credible narrative, not abandonment.
+Still a reapplication. The pivot IS the answer to "what changed" - but it needs to be a credible narrative, not abandonment.
 - Why did the previous idea fail or get deprioritized? Be specific.
 - What did you learn that led to the new idea?
 - Is there a through-line in domain expertise between old and new?
@@ -49,7 +49,7 @@ Still a reapplication. The pivot IS the answer to "what changed" — but it need
 - Flag if pivot looks random: "Partners will ask why you abandoned the last idea. The through-line from old to new must be clear."
 
 **Scenario C: Returning founder, new co-founders joined**
-Prior history still applies. New co-founders are a positive signal — address why they joined and what they add.
+Prior history still applies. New co-founders are a positive signal - address why they joined and what they add.
 - Why did team composition change?
 - What does the new co-founder bring that was missing?
 - Have the new co-founders shipped anything together with the returning founder yet?
@@ -59,14 +59,14 @@ Prior history still applies. New co-founders are a positive signal — address w
 Most transparency-sensitive scenario. Partners will see prior history. Do not hide it.
 - Prior company: what did it do, how far did it get, why did it end?
 - What was learned that applies to the current company?
-- The prior startup is now an opportunity for the "most impressive thing" answer — even a failed startup that shipped something real counts.
+- The prior startup is now an opportunity for the "most impressive thing" answer - even a failed startup that shipped something real counts.
 - Frame: "I built X, got to Y, learned Z. That's why I'm now building this."
 
-**Scenario E: Mixed team — some returning, some new**
+**Scenario E: Mixed team - some returning, some new**
 Returning founders' history applies. New co-founders have no prior YC history but that doesn't make this a first application.
 - Which founders are returning, which are new?
 - Handle returning founders per Scenario A/B/D above
-- For new co-founders: their joining is a "what changed" signal — address it
+- For new co-founders: their joining is a "what changed" signal - address it
 
 Output for any reapplication scenario:
 ```
@@ -77,7 +77,7 @@ prior_batches: [list]
 prior_idea: [what it was]
 interview: [yes/no + what happened]
 feedback_received: [what YC said]
-pivot: [yes/no — if yes, from what to what and why]
+pivot: [yes/no - if yes, from what to what and why]
 team_changes: [who joined or left and why]
 what_changed: [specific material progress, pivot rationale, or team addition]
 through_line: [the connecting thread between then and now]
