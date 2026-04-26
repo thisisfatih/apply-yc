@@ -71,3 +71,6 @@ docs/
 ## License
 
 MIT
+
+---
+> README maintained automatically by [🐘 elephant](https://github.com/tonone-ai/elephant) — keep your docs in sync without the manual work.

@@ -4,3 +4,5 @@
 
 2026-04-26 14:39 : feat: initial release of yc-application skill v0.1.0 — @fatih
 2026-04-26 14:47 : docs: update install to claude plugin marketplace commands — @fatih
+2026-04-26 14:49 : readme footer added — @fatih
+2026-04-26 15:10 : docs: reformat CHANGELOG to KaC format and add elephant footers — @fatih
