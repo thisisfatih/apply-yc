@@ -16,3 +16,4 @@
 2026-04-26 15:48 : feat: onboarding skill + rewrite README with full flow — @fatih
 2026-04-26 15:49 : fix: em dash sweep in all 4 skill files (form-fill, yc-application, founder-profile, onboarding) — CI grep was failing — @fatih
 2026-04-26 16:03 : feat(reapplying): add scenarios C/D/E for new co-founders, new company, mixed team — @fatih
+2026-04-26 16:17 : feat: ground all skills in real Summer 2026 form structure — @fatih

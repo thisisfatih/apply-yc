@@ -49,6 +49,8 @@ Garry Tan (current CEO) and the partners have been explicit about current priori
 
 **4. Founders who shipped before they applied.** "About a quarter of the current YC batch is vibe coding their way to product market fit." The bar to ship has collapsed; the bar to demonstrate execution has risen.
 
+**5. AI coding tool fluency.** Summer 2026 is the first batch with an explicit form question asking for your tech stack *including AI models and AI coding tools* (Claude Code, Cursor, Copilot, etc.), plus an optional upload of a coding agent session export. YC added this to surface founders who treat AI tooling as core infrastructure, not an add-on. If you use Claude Code or Cursor heavily, this is a direct competitive advantage in the application itself.
+
 ## Spring 2026 Requests for Startups (from ycombinator.com/rfs)
 
 YC's RFS list signals what they actively want to see applications for. The Spring 2026 themes:
@@ -71,7 +73,7 @@ YC's RFS list signals what they actively want to see applications for. The Sprin
 - **Jared Friedman** - Group Partner. Co-founder of Scribd. Long tenure at YC.
 - **Harj Taggar** - Group Partner. Lightcone podcast host. Long YC history.
 - **Dalton Caldwell** - Partner Emeritus. Recorded the Interview Guide video. Was Head of Admissions for years.
-- **Michael Seibel** - Partner Emeritus. Co-founded Twitch. Led the accelerator 2016-2024. Many of his blog posts and podcast clips are still the canonical advice.
+- **Michael Seibel** - Left YC in March 2025. Co-founded Twitch. Led the accelerator 2016-2024. His blog posts, podcast clips, and recorded talks are still canonical advice - they represent the YC partner mindset even though he's no longer active.
 - **Gustaf Alströmer** - Partner. Ex-Airbnb growth. Strong industrial / hard-tech interest.
 - **Eric Migicovsky** - Partner. Founded Pebble.
 - **Anu Hariharan** - Partner. Fintech focus.

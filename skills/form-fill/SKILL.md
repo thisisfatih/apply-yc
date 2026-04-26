@@ -5,13 +5,13 @@ description: Auto-fill the YC application form using Playwright. Requires a comp
 
 # YC Application Form Filler
 
-Fill the YC application form field by field. Claude types everything. The founder reviews and approves each section. The founder clicks every button that advances or submits — Claude never clicks those.
+Fill the YC application form field by field. Claude types everything. The founder reviews and approves each section. The founder clicks every button that advances or submits - Claude never clicks those.
 
 ## Prerequisites
 
 Before starting:
 1. A completed `FOUNDER_PROFILE` block from the founder-profile skill. If none exists, run that skill first.
-2. The founder must be logged into ycombinator.com/apply in their browser.
+2. The founder must be logged into apply.ycombinator.com in their browser.
 3. Playwright must be connected.
 
 If any prerequisite is missing, stop and say what's needed before continuing.
@@ -21,7 +21,7 @@ If any prerequisite is missing, stop and say what's needed before continuing.
 ## Rules (never break these)
 
 - **Claude fills fields. Founder clicks buttons.** No exceptions.
-- Never click: Submit, Save & Continue, Next, Confirm, or any button that changes form state or advances sections.
+- Never click: Submit, Save changes, Save & return to application, or any button that changes form state.
 - After filling each section, take a screenshot and show it. Ask: "Does this look right? Tell me anything to change, or click [button name] to continue."
 - If a field has a character limit and the drafted answer exceeds it, truncate and flag: "I truncated this to fit the [N]-char limit. Review the cut before continuing."
 - Never fabricate a value. If the profile has `TBD` for a field, leave the field blank and flag it.
@@ -29,125 +29,185 @@ If any prerequisite is missing, stop and say what's needed before continuing.
 
 ---
 
+## Form structure (Summer 2026)
+
+The YC application has two layers:
+1. **Main application** at `apply.ycombinator.com/apps/[id]/edit` - contains Founders, Founder Video, Company, Progress, Idea, Equity, Curious, Batch Preference
+2. **Founder Profile sub-pages** at `apply.ycombinator.com/bio/[id]/edit` - one per founder, contains Basics, Role & Responsibilities, Background, Social Media, Accomplishments
+
+Fill founder profiles FIRST, then return to fill the main application.
+
+---
+
 ## Startup
 
 ```
-1. Use browser_navigate to go to https://www.ycombinator.com/apply
+1. Use browser_navigate to go to the application URL
 2. Use browser_snapshot to read the current page state
 3. Confirm the founder is logged in and on the application form
-4. Identify which section is currently active
-5. Tell the founder: "I can see your application form. I'll fill each section and 
-   show you a screenshot before you advance. You click all the buttons — I'll tell 
-   you which one to click and when."
+4. Tell the founder: "I can see your application. I'll fill each section and
+   show you a screenshot before you advance. You click all the buttons -
+   I'll tell you which one and when. Starting with your founder profile(s)."
 ```
 
 ---
 
-## Section A: Company
+## Founder Profile(s) - fill first, one per founder
+
+Navigate to each founder's profile via the "Edit profile" link on the Founders section.
+
+### Basics
+- Name
+- Email
+- Age (dropdown)
+- Phone number (country selector + number)
+- Gender
+- City (location autocomplete - type city name, select from dropdown)
+
+### Role & Responsibilities
+- Title / main responsibility (CEO, CTO, etc.)
+- Equity percent
+- Technical founder: Yes/No
+- Currently in school: Yes/No
+- Exclusive commitment to this project if accepted: Yes/No
+
+### Background
+- LinkedIn URL
+- Education: add entries (school name, degree, dates)
+- Work History: add entries (company, role, dates, description)
+
+### Social Media
+- Personal website URL
+- GitHub URL
+- Twitter URL
+
+### Accomplishments
+These are the highest-stakes fields in the founder profile. Fill carefully.
+
+- **"Please tell us about a time you most successfully hacked some (non-computer) system to your advantage."** - the wildcard/hacker question. Specific, surprising, shows creative problem-solving outside software.
+- **"Please tell us in one or two sentences about the most impressive thing other than this startup that you have built or achieved."** - PG calls this the most important question. Hard achievements with real results. Not the current startup.
+- **"Tell us about things you've built before."** - apps, sites, OSS. Include URLs.
+- **"List any competitions/awards you have won, or papers you've published."** - include patents, grants, press.
+
+After filling all profile fields:
+- Take screenshot
+- Output: "Founder profile filled. Review above. Click 'Save & return to application' to continue."
+
+Repeat for each additional co-founder.
+
+---
+
+## Section: Founders (main form)
+
+After returning to main application:
+
+- **"Who writes code, or does other technical work on your product? Was any of it done by a non-founder? Please explain."** - be specific: name the founder(s), what they built, any contractor work
+- **"Are you looking for a cofounder?"** - fill only if actively looking; if team is complete, leave blank or answer appropriately
+
+After filling:
+- Take screenshot
+- Output: "Founders section filled. Review above. Scroll down to Founder Video."
+
+---
+
+## Section: Founder Video
+
+- File upload - founder must upload the video file themselves (Claude cannot upload files)
+- Flag: "This requires a file upload - I can't do this part. Upload your 1-minute video here. Max 100MB. All founders should appear on camera."
+- After founder uploads: "Founder video uploaded. Continuing to Company section."
+
+---
+
+## Section: Company
 
 Fill in order:
-1. Company name field
-2. Company URL (skip if NONE in profile)
-3. Demo URL (skip if NONE; if missing, flag: "No demo URL in your profile — strongly recommend adding one before submitting")
-4. 50-character pitch field — fill, then read back the char count from the field
-5. "What is your company going to make?" — fill with description from profile
-6. Location fields
-7. Wildcard hack question
-8. Most impressive thing
-9. Founder video URL
-10. Who writes code field
-11. Number of founders
+1. Company name
+2. "Describe what your company does in 50 characters or less." - count chars, flag if over
+3. Company URL (skip if none)
+4. Demo: file upload - flag same as video: "Upload your demo here if you have one. Max 3 min / 100MB."
+5. "Please provide a link to the product, if any." - URL
+6. Login credentials for product link (skip if not needed)
+7. "What is your company going to make? Please describe your product and what it does or will do."
+8. "Where do you live now, and where would the company be based after YC?" - format: "City A, Country A / City B, Country B"
+9. "Explain your decision regarding location."
 
-After filling all Company fields:
+After filling:
 - Take screenshot
-- Output: "Section A filled. Review above. When ready, click [exact button label as shown on page] to save/advance."
+- Output: "Company section filled. 50-char pitch: '[value]' ([N] chars). Review above."
 
 ---
 
-## Section B: Founders
+## Section: Progress
 
-For each founder in profile:
-- Fill name, age, education, email, URLs, prior employers
+Fill in order:
+1. "How far along are you?" - current stage, what's shipped, user/revenue state
+2. "How long have each of you been working on this? How much of that has been full-time? Please explain."
+3. **"What tech stack are you using, or planning to use, to build this product? Include AI models and AI coding tools you use."** - list specific stack; explicitly mention Claude Code, Cursor, or other AI coding tools if used
+4. **"Optional: attach a coding agent session you're particularly proud of."** - .md or .txt file, 25MB max. Flag: "YC is asking for a Claude Code or Cursor session export. If you have a session transcript showing good AI-assisted work, upload it here. Use /export in Claude Code to get a transcript."
+5. "Are people using your product?" - Yes/No radio
+   - If Yes: additional fields may appear (user count, active users)
+6. "Do you have revenue?" - Yes/No radio
+   - If Yes: additional fields will appear - likely monthly revenue table. Fill one cell at a time, oldest month first.
+7. "If you are applying with the same idea as a previous batch, did anything change? If you applied with a different idea, why did you pivot and what did you learn from the last idea?" - fill only if reapplying; leave blank if first application
+8. "If you have already participated or committed to participate in an incubator, 'accelerator' or 'pre-accelerator' program, please tell us about it." - fill if applicable
 
-Fill shared fields:
-- Interesting project together
-- How long known / how met
-- Met in person
-- Exclusive commitment
-- Other commitments
-- Future commitments
-
-After filling all Founder fields:
+After filling:
 - Take screenshot
-- Output: "Section B filled. Review above. When ready, click [button] to advance."
+- Output: "Progress section filled. Review above."
 
 ---
 
-## Section C: Progress
+## Section: Idea
+
+Fill in order:
+1. "Why did you pick this idea to work on? Do you have domain expertise in this area? How do you know people need what you're making?"
+2. "Who are your competitors? What do you understand about your business that they don't?"
+3. "How do or will you make money? How much could you make?"
+4. Category dropdown - select the closest match
+5. "If you had any other ideas you considered applying with, please list them." - list 1-3 alternatives; YC says they sometimes fund founders on ideas listed here, not the main one
+
+After filling:
+- Take screenshot
+- Output: "Idea section filled. Review above."
+
+---
+
+## Section: Equity
 
 Fill:
-- Time working / full-time or part-time
-- Stage (select dropdown value closest to profile stage)
-- User count fields
-- Paying customer fields
-- Revenue table — 6 monthly fields in order (oldest first). Fill 0 for months with no revenue.
-- Revenue notes
-- Prior YC batch field (N/A if first time)
-- Other accelerators
+1. "Have you formed ANY legal entity yet?" - Yes/No
+   - If Yes: additional fields appear for entity details
+2. "Have you taken any investment yet?" - Yes/No
+   - If Yes: additional fields appear for investment amount/source
+3. "Are you currently fundraising?" - Yes/No
 
-Revenue table is the trickiest field — fill one cell at a time, confirm each before moving to next.
+Equity percent per founder is filled in each founder's profile (Role & Responsibilities), not here.
 
-After filling Progress:
+After filling:
 - Take screenshot
-- Output: "Section C filled. Revenue table: [list the 6 values you entered]. Review above. Click [button] to advance."
+- If equity split looks unusual (e.g. >70/30 between two founders): flag it. "Your equity split is [X/Y]. YC prefers roughly equal splits - worth reviewing before submitting."
+- Output: "Equity section filled. Review above."
 
 ---
 
-## Section D: Idea
+## Section: Curious
 
 Fill:
-- Why this idea / domain expertise
-- What's new / substitutes
-- Competitors / who feared most
-- Unique insight
-- Business model / revenue potential
-- User acquisition
-- Category dropdown — select closest match
+1. "What convinced you to apply to Y Combinator? Did someone encourage you to apply? Have you been to any YC events?"
+2. "How did you hear about Y Combinator?"
 
-After filling Idea:
+After filling:
 - Take screenshot
-- Output: "Section D filled. Review above. Click [button] to advance."
+- Output: "Curious section filled. Review above."
 
 ---
 
-## Section E: Equity
+## Section: Batch Preference
 
-Fill:
-- Legal entity fields
-- Equity table (per-founder rows)
-- Investment fields (skip if NONE)
-- Monthly spend, cash, runway
+Select: Summer 2026 OR A batch after Summer 2026
 
-Equity table may have multiple rows — fill one row per founder.
-
-After filling Equity:
-- Take screenshot
-- Flag any equity split that looks unusual (e.g. >70/30 split between two founders): "Your equity split is [X/Y]. YC prefers roughly equal splits — worth reviewing before submitting."
-- Output: "Section E filled. Review above. Click [button] to advance."
-
----
-
-## Section F: Others
-
-Fill:
-- Other ideas
-- Amusing discovery
-- Why YC
-- Referral code (skip if NONE)
-
-After filling Others:
-- Take screenshot
-- Output: "Section F filled. Review above."
+After filling:
+- Output: "Batch preference set. All sections filled."
 
 ---
 
@@ -155,33 +215,35 @@ After filling Others:
 
 Before the founder submits:
 
-1. Take a full-page screenshot of the completed application if possible
-2. Run a final check:
+1. Take screenshot of the top of the application
+2. Run final check:
    - Any fields left blank that shouldn't be? Flag them.
    - Any `TBD` values that were never filled? Flag them.
    - 50-char pitch within limit?
-   - Revenue table populated (even with zeros)?
-   - Video URL present?
+   - Founder video uploaded?
+   - Founder profile(s) complete?
 
-3. Output a summary:
+3. Output:
 ```
 Pre-submit checklist:
 [ ] 50-char pitch: [value] ([N] chars)
-[ ] Demo URL: [present/MISSING]
-[ ] Founder video: [present/MISSING]
-[ ] Revenue table: [list 6 values]
+[ ] Founder video: [uploaded / MISSING]
+[ ] Founder profiles complete: [yes / MISSING for whom]
+[ ] Coding agent session: [uploaded / skipped]
+[ ] Reapply question: [answered / N/A]
 [ ] TBD fields remaining: [list or NONE]
 
-If everything looks correct, click Submit on the form.
-I will not click Submit — that's yours.
+If everything looks correct, click 'Submit application'.
+I will not click Submit - that's yours.
 ```
 
 ---
 
 ## Error handling
 
-- **Field not found:** Use browser_snapshot to re-read the page, try alternate selectors. If still not found, flag to founder: "I can't find the [field name] field. Please click into it and tell me what you see."
+- **Field not found:** Use browser_snapshot to re-read the page, try alternate selectors. If still not found, flag: "I can't find the [field name] field. Please click into it and tell me what you see."
 - **Character limit exceeded:** Truncate to limit, flag exact cut point, ask founder to review.
-- **Login session expired:** Tell founder to re-login and refresh — then resume from current section.
+- **Login session expired:** Tell founder to re-login and refresh - then resume from current section.
 - **Page changed unexpectedly:** Take screenshot, describe what changed, ask founder how to proceed.
 - **Anti-bot block:** Stop immediately. Tell founder: "The page may be blocking automated input. Try filling [field] manually or reload the page."
+- **File upload fields:** Claude cannot trigger file uploads. Always hand these to the founder with exact instructions on what to upload and where.
