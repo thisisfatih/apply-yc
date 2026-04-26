@@ -1,6 +1,7 @@
 ---
 name: yc-application
-description: Help founders write, draft, critique, and improve their Y Combinator application. Trigger whenever the user mentions YC, Y Combinator, applying to YC, a YC application question ("what is your company going to make", the 50-character pitch, the founder video, the wildcard hack question, the impressive thing question), the YC interview, a YC batch deadline (Spring/Summer/Fall/Winter), Paul Graham's application essay, or YC's Requests for Startups. Also trigger when a founder asks for help with a pitch matching YC's framing (50-char pitch, what's new, competitors, how will you make money) even if YC is not explicitly named. Built on Paul Graham's official essay, partner advice (Michael Seibel, Garry Tan, Dalton Caldwell, Jessica Livingston), real successful applications (Dropbox S07, Basedash S20), and current 2025-2026 YC priorities. Default to drafting actual answers, not just giving advice.
+description: Help founders write, draft, critique, and improve their Y Combinator application. Trigger on: YC, Y Combinator, applying to YC, YC application questions (50-char pitch, founder video, wildcard hack, impressive thing), YC interview, batch deadlines, Paul Graham essay, Requests for Startups. Also trigger for pitch help matching YC framing (what do you make, what's new, competitors, revenue) even without YC named. Built on PG's essay, partner advice (Seibel, Tan, Caldwell, Livingston), real applications (Dropbox S07, Basedash S20), 2025-2026 YC priorities. Drafts actual answers, not advice.
+version: 0.2.0
 ---
 
 # YC Application Skill
@@ -22,7 +23,9 @@ This skill is built around that fact. The core failure modes Claude is preventin
 
 The right next step depends on where the founder is. Identify which of these matches and proceed.
 
-**1. Founder is starting from zero.** They've decided to apply but haven't written anything. → Walk through the application section by section, drafting each answer with them. Read `references/application-questions.md` first - it has the full current question list with word/character limits, what each question is *really* asking, and the partner-level rubric for what makes a strong answer. Don't try to draft all questions in one shot; do them in clusters (Company → Founders → Progress → Idea → Equity/Legal → Others). Show drafts, not just advice.
+**0. Handed off from founder-profile with an angle analysis.** The founder has completed discovery and has a confirmed narrative. → Draft gatekeeping questions FIRST before anything else. Order matters: (a) 50-char pitch — produce 3-5 versions, pick the strongest together; (b) "What is your company going to make?" — this is the most-read answer, iterate until a partner can reproduce the idea in their head in 4 seconds; (c) "Most impressive thing" per founder — PG calls this the most important question, don't rush it. Only after these three are excellent: complete the remaining sections. Then run a full critique pass (read `references/critique-rubric.md`) on the complete draft before handing back to form-fill.
+
+**1. Founder is starting from zero with no profile.** → First ask: have they run founder-profile? If not, suggest it — the angle analysis makes every answer stronger. If they want to proceed without it: walk through the application starting with the gatekeeping questions (50-char pitch → product description → impressive thing), then complete remaining sections in clusters (Company → Founders → Progress → Idea → Equity → Others). Don't draft all questions in one shot. Show drafts, not just advice.
 
 **2. Founder has a draft and wants critique.** → Read `references/critique-rubric.md`. It contains the partner-mindset checklist (matter-of-fact test, "could anyone reproduce your idea from this sentence", specific-evidence test, obstacle-honesty test, etc.). Go question-by-question and flag what's vague, marketing-speak, or buried. Suggest concrete rewrites, don't just say "this is unclear."
 

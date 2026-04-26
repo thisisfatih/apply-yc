@@ -1,250 +1,150 @@
 ---
 name: founder-profile
-description: Capture a structured founder and company profile to use when drafting or auto-filling a YC application. Trigger when a founder wants to fill out the YC form, when they say "let's start my application", "help me apply to YC", or when form-fill needs a profile and none exists yet. Starts with strategic discovery before any form questions — identifies the founder's strongest angles for YC, then captures form fields.
+description: Strategic discovery before a YC application. Trigger when a founder wants to apply to YC, says "let's start my application", "help me apply", or "fill out the form". Runs discovery, identifies strongest angles and critical gaps, then hands off to yc-application for drafting. Does NOT draft answers — that is yc-application's job. Does NOT fill the form — that is form-fill's job.
 ---
 
-# Founder Profile — Discovery First, Form Second
+# Founder Profile — Discovery and Strategy
 
-Two phases:
+This skill does one thing: understand the founder deeply enough to know what their strongest YC narrative is and what will kill their application. Then it hands off.
 
-1. **Discovery** — conversational intake to understand the founder and company. No form structure yet. Goal: identify the 3-4 strongest things about this team for a YC partner.
-2. **Field capture** — map the strongest angles into the actual form fields, section by section.
+Three phases — all must complete before anything gets drafted or filled.
 
-Don't skip Phase 1. A form filled without a strategy is just typed marketing-speak.
+---
+
+## Phase 0: Reapply check
+
+First question, always:
+
+"Have you applied to YC before?"
+
+**If no:** proceed to Phase 1.
+
+**If yes:**
+- Which batch(es)?
+- Did you get an interview? If yes, what happened?
+- Did you get written feedback from YC? What did it say specifically?
+- What has materially changed since that application — product shipped, revenue, co-founder added, pivot?
+
+This matters because:
+- ~30% of accepted founders applied before — reapplying is not a disadvantage if handled correctly
+- The "what changed since last time" question is the single biggest opportunity in a reapplication
+- If they got feedback and ignored it or can't address it, that's a problem to surface now
+
+Output for reapplicants:
+```
+## Reapplication Context
+prior_batches: [list]
+interview: [yes/no]
+feedback_received: [what YC said]
+what_changed: [specific material progress since last application]
+```
+
+Flag if "what changed" is weak (nothing material shipped) — tell them directly: "Reapplying without material progress gets the same result. What can you ship before this deadline?"
 
 ---
 
 ## Phase 1: Discovery
 
-Ask these in conversation, not as a list. One thread at a time. Listen for what's genuinely impressive and probe it — don't move on too fast.
+Conversational. Not form-shaped. Ask one thread at a time, follow the interesting thing.
 
-### Founder background
+### Founder(s)
 
-Ask:
-- Walk me through your background. What have you built or done that was genuinely hard?
-- What's the single most impressive thing you've done outside this startup? (Not a title — a specific hard thing with a result.)
-- If there are co-founders: how did you meet, how long have you worked together, what have you built together?
-- Does anyone on the team write code? Who built the product?
+- Walk me through your background. What's the hardest thing you've built or done?
+- What's the single most impressive thing you've done outside this startup? Be specific — not a title, a thing with a result.
+- If multiple founders: how did you meet, how long have you worked together, what have you built together? (No shared project is a flag — probe it.)
+- Does anyone write code? Who built the product?
 
-**What you're listening for:** Specificity. Verifiable things. Hard intellectual achievements. Prior startups (success or failure). Technical depth. Domain expertise that's non-obvious.
+**Listen for:** Specific, verifiable, hard achievements. Technical depth. Domain expertise earned through doing, not reading. Prior founder experience (success or failure). Long co-founder relationship with real shipped work together.
 
-**Red flags to probe:** Generic credentials ("10 years in finance"), titles without achievements, no shared project between co-founders, no technical founder with no plan for one.
+**Probe until specific.** "10 years in finance" → "what specifically did you build or do in those 10 years that was hard?" Don't accept adjectives.
 
-### The company
+### Company
 
-Ask:
-- What does your company do? Explain it to me like I'm a smart person who doesn't know your industry.
-- Why did you pick this specific idea? Did you have this problem yourself, or come at it another way?
-- What does someone do today when they have this problem — what are the painful workarounds?
+- What does your company do? Explain it to me like I'm smart but know nothing about your space.
+- How did you come up with this idea? Did you have this problem yourself?
+- What does someone do today when they have this problem? What's the painful workaround?
 - Who are your competitors? Who do you actually fear?
-- What do you know about this market that most people don't?
+- What do you understand about this market that most people who look at it don't?
+- Why is now the right time for this — what changed?
 
-**What you're listening for:** Founder-market fit (personal need > domain experience > research). Clear X-but-Y description. Named real competitors. Non-obvious insight.
-
-**Red flags to probe:** "I saw a big market opportunity" (not founder-market fit), "we have no competitors" (bad research or bad market), vague product description that doesn't reproduce in your head.
+**Listen for:** X-but-Y clarity. Founder-market fit (personal need > domain experience > research > "saw a big market"). Named real competitors. Non-obvious insight earned through experience. "Why now" that's specific to the market, not just "AI is hot."
 
 ### Traction
 
-Ask:
-- Where are you right now — idea, prototype, live product, revenue?
-- How many users or customers do you have? Are they paying?
-- What's your monthly revenue for each of the last 6 months?
+- Where are you — idea, prototype, live product, revenue?
+- How many users? How many paying? What's your monthly revenue for each of the last 6 months?
 - What's the most impressive traction signal you have, however small?
+- What have you shipped in the last 30 days?
 
-**What you're listening for:** Honest numbers, even tiny ones. Specificity. Trajectory. Any signal that real people want this.
+**Listen for:** Real numbers. Specific dates. Honest trajectory. It's fine to have $30/month — Basedash got in with that. What's not fine is vague language ("early traction", "growing fast", "lots of interest").
 
-**Red flags:** "lots of interest", "growing fast", "early traction" — push until you have real numbers.
-
-### Why YC, why now
-
-Ask:
-- Why are you applying to this specific batch?
-- Is there a deadline reason — product milestone, runway, team coming together?
-- Have you applied before? If so, what feedback did you get and what changed?
+**Push until you have numbers.** If revenue is 0, that's the answer — not a description.
 
 ---
 
-## Phase 1 output: Angle identification
+## Phase 2: Angle analysis and red flag check
 
-After discovery, before asking a single form question, output this block:
+After discovery, before any drafting, output this block and ask the founder to confirm or correct it.
 
 ```
 ## YC Angle Analysis
 
-**Strongest cards:**
-1. [The single most impressive thing about this team/company — be specific]
+**The 3 strongest things about this team/company for a YC partner:**
+1. [Most impressive specific thing — be precise, not "great team"]
 2. [Second strongest signal]
 3. [Third strongest signal]
 
 **Narrative spine:**
-[1-2 sentences: who these founders are + what gives them the right to build this + what makes the traction real]
+[1-2 sentences: who these founders are + what gives them the right
+to build this + what makes the traction credible]
 
-**Risks a YC partner will flag:**
-- [risk 1 — and how to address it in the application]
-- [risk 2]
+**What will open the interview door:**
+[The 1-2 things that, if communicated clearly, will get this past
+the first filter. Usually: the most impressive founder achievement
++ the clearest possible product description.]
 
-**Highest-stakes questions for this founder:**
-- [Which YC questions matter most given what they've told you, and why]
+**What a YC partner will flag (address in the application):**
+- [risk/gap 1 and how to address it]
+- [risk/gap 2]
 
-**Weakest areas to strengthen before form-fill:**
-- [What's missing or thin]
+**Instant-reject risks to fix before drafting:**
+- [anything that triggers automatic no — see below]
 ```
 
-Show this to the founder. Ask: "Does this match how you see your company? Correct anything that's off."
+### Instant-reject checklist
 
-Only proceed to Phase 2 after the founder confirms or corrects the angle analysis.
+Flag these explicitly if present. Do not proceed to drafting until the founder has a plan to address each one:
+
+- **No technical founder** — who writes code? If contractors built it, what's the plan to bring tech in-house? Michael Seibel: top-3 turn-off.
+- **No product built** — "we're pre-product" with no working prototype is very hard. What can be shipped before the deadline?
+- **All adjectives, no specifics** — if the impressive thing answer is still vague after probing, say so.
+- **"No competitors"** — instant red flag. Work through the competitor list now.
+- **Co-founders who've never shipped anything together** — flag. Not disqualifying but needs addressing in the application.
+- **Revenue vagueness** — if they won't give numbers, the form will expose it anyway. Get them now.
 
 ---
 
-## Phase 2: Field capture
+## Handoff
 
-Now map the strategy into form fields. Ask questions in YC form order, but frame each question using the angle analysis — help the founder see how their strongest cards map to each field.
+After the founder confirms the angle analysis (or corrects it), hand off:
 
-### Section A: Company
+"Now I have a clear picture of your strongest narrative. Let's draft the application. I'll hand this to the yc-application skill, which will:
 
-1. Company name
-2. Company URL (if any)
-3. Demo URL — flag hard if missing: "Demo URL is statistically important. Do you have a Loom or screen recording you can link?"
-4. 50-character pitch — reference the narrative spine from Phase 1, suggest 2-3 options
-5. What is your company going to make? — use X-but-Y if it fits, reference the strongest card
-6. Location now / post-YC
-7. Wildcard hack question — probe for a real one. "What's a system you've beaten that wasn't technical?"
-8. Most impressive thing — pull from Phase 1 discovery, make sure it's specific and not the startup itself
-9. Founder video URL
-10. Who writes code?
-11. Number of founders
+1. Draft the gatekeeping questions first (50-char pitch, product description, most impressive thing) — these must be excellent before anything else
+2. Complete the remaining sections using the narrative we established
+3. Run a full partner-mindset critique on all answers
+4. Fix anything that would kill or weaken the application
 
-### Section B: Founders
+Once the answers are locked and critiqued, we'll use the form-fill skill to fill the actual YC form field by field — you approve each section, you click all the buttons.
 
-Per founder (pull mostly from Phase 1):
-- Full name, age, education, email, URLs, prior employers
-- Their most impressive thing (already captured)
+Ready to start drafting?"
 
-Shared:
-- Interesting project together — pull from Phase 1
-- How long known / how met
-- Met in person?
-- Exclusive commitment?
-- Other / future commitments?
-
-### Section C: Progress
-
-- Time working, full-time or part-time
-- Stage
-- Active users / paying customers
-- Revenue — 6 monthly fields, oldest first. Fill 0 for pre-revenue months.
-- Revenue notes
-- Prior YC batch?
-- Other accelerators?
-
-### Section D: Idea
-
-Pull from Phase 1 discovery:
-- Why this idea / domain expertise — use the founder-market fit framing from discovery
-- What's new / substitutes — use the "painful workarounds" the founder described
-- Competitors / who feared most — use what they named in discovery
-- Unique insight — use the non-obvious thing they know
-- Business model / revenue potential
-- User acquisition / chicken-and-egg
-- Category dropdown
-
-### Section E: Equity
-
-- Legal entity
-- Equity breakdown
-- Investment taken
-- Monthly spend / cash / runway
-
-### Section F: Others
-
-- Other ideas considered
-- Amusing discovery
-- Why YC
-- Referral code
+Then invoke the `yc-application` skill and pass it the angle analysis as context.
 
 ---
 
-## Phase 2 output: FOUNDER_PROFILE block
+## What this skill does NOT do
 
-After all sections confirmed:
-
-```
-FOUNDER_PROFILE
-===============
-## Angles
-strongest_cards: [1, 2, 3]
-narrative_spine: [value]
-risks_to_address: [list]
-
-## Company
-name: [value]
-url: [value or NONE]
-demo_url: [value or NONE]
-pitch_50: [value]
-description: [value]
-location_now: [value]
-location_post_yc: [value]
-hack_answer: [value]
-impressive_thing: [value]
-video_url: [value or NONE]
-who_codes: [value]
-founder_count: [value]
-
-## Founders
-[[per founder]]
-- name / age / education / email / urls / employers / impressive
-
-shared_project: [value]
-how_met: [value]
-met_in_person: [yes/no]
-exclusive_commitment: [yes/no + detail]
-other_commitments: [value or NONE]
-future_commitments: [value or NONE]
-
-## Progress
-time_working: [value]
-stage: [live/beta/building/idea]
-active_users: [number]
-paying_customers: [number]
-top_customer: [value or NONE]
-revenue_6mo: [m-6, m-5, m-4, m-3, m-2, m-1]
-revenue_notes: [value or NONE]
-prior_yc_batch: [value or N/A]
-other_accelerators: [value or NONE]
-
-## Idea
-why_this: [value]
-whats_new: [value]
-substitutes: [value]
-competitors: [value]
-feared_most: [value]
-unique_insight: [value]
-business_model: [value]
-revenue_potential: [value]
-user_acquisition: [value]
-category: [value]
-
-## Equity
-legal_entity: [yes/no, type, jurisdiction]
-equity_table: [name: X%, title; ...]
-investment: [value or NONE]
-monthly_spend: [$]
-cash: [$]
-runway_months: [number]
-
-## Others
-other_ideas: [value]
-amusing: [value]
-why_yc: [value]
-referral: [value or NONE]
-===============
-Profile complete. Ready for form-fill skill.
-```
-
----
-
-## Handoff rules
-
-- If founder says "help me write this answer" at any point — pause intake, invoke `yc-application` skill to draft, then return here with the result
-- If a field is genuinely unknown — use `TBD`, never guess
-- If Phase 1 surfaces a serious weakness (no technical founder, no traction at all, idea is thin) — say so directly before Phase 2. Don't paper over it with good form answers.
+- Does not draft answers — that is `yc-application`
+- Does not fill form fields — that is `form-fill`
+- Does not paper over critical gaps — if there's no technical founder and no plan, say so clearly before any drafting happens
