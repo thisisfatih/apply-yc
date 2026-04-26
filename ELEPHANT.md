@@ -39,3 +39,4 @@
 2026-04-26 22:08 : fix(git): rebased local main on dev/main -- resolved ELEPHANT.md conflict keeping both feat entries; local now 1 commit ahead of dev/main — @fatih
 2026-04-26 22:09 : feat: README badges added (version/license/platform) + version bumped 0.3.0 -> 0.9.1 across plugin.json, CHANGELOG, README — @fatih
 2026-04-26 22:09 : rule: CLAUDE.md versioning rule added -- plugin.json + README badge + CHANGELOG must match; update all three in same commit — @fatih
+2026-04-26 22:13 : fix(git): local main diverged again -- 2 memory-engrave commits not in remote; squashed into PR #8; resolved via `git reset --hard dev/main` (no data loss, ELEPHANT.md identical) — @fatih
