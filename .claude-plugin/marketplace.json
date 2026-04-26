@@ -1,15 +1,18 @@
 {
   "name": "apply-yc",
+  "description": "Help founders write YC applications that get interviews. Drafts, critiques, scores, and auto-fills the form.",
   "owner": {
     "name": "thisisfatih",
-    "email": "fatih@fatihunver.com"
+    "email": "fatih@fatihunver.com",
+    "url": "https://github.com/thisisfatih"
   },
   "plugins": [
     {
       "name": "apply-yc",
       "source": ".",
-      "description": "Help founders write, draft, critique, and auto-fill their Y Combinator application.",
-      "version": "0.3.0"
+      "description": "Help founders write YC applications that get interviews. Drafts, critiques, scores, and auto-fills the form.",
+      "version": "0.3.0",
+      "category": "productivity"
     }
   ]
 }

@@ -111,6 +111,8 @@ skills/
       yc-context.md             batch structure, deal terms, RFS, partners
   founder-profile/
     SKILL.md                    discovery + angle analysis
+  onboarding/
+    SKILL.md                    entry point — routes to the right skill
   form-fill/
     SKILL.md                    Playwright form filler
 evals/
