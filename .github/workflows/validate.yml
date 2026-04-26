@@ -1,0 +1,53 @@
+name: Validate skill
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: SKILL.md line count (max 500)
+        run: |
+          lines=$(wc -l < skills/yc-application/SKILL.md)
+          echo "SKILL.md: $lines lines"
+          if [ "$lines" -gt 500 ]; then
+            echo "FAIL: SKILL.md exceeds 500-line limit ($lines lines)"
+            exit 1
+          fi
+
+      - name: Skill description length (max 1024 chars)
+        run: |
+          desc=$(awk '/^description:/{found=1; sub(/^description: */,""); print; next} found && /^[a-z]/{exit} found{print}' skills/yc-application/SKILL.md | tr -d '\n')
+          len=${#desc}
+          echo "Description: $len chars"
+          if [ "$len" -gt 1024 ]; then
+            echo "FAIL: description exceeds 1024-char limit ($len chars)"
+            exit 1
+          fi
+
+      - name: No em dashes in skill files
+        run: |
+          if grep -rn " — " skills/; then
+            echo "FAIL: em dashes found in skill files (use hyphens)"
+            exit 1
+          fi
+          echo "Clean: no em dashes"
+
+      - name: Valid JSON (evals)
+        run: |
+          python3 -m json.tool evals/evals.json > /dev/null
+          echo "evals/evals.json: valid JSON"
+
+      - name: YAML frontmatter present in SKILL.md
+        run: |
+          head -1 skills/yc-application/SKILL.md | grep -q "^---$" || {
+            echo "FAIL: SKILL.md missing YAML frontmatter"
+            exit 1
+          }
+          echo "Frontmatter present"

@@ -8,3 +8,4 @@
 2026-04-26 15:10 : docs: reformat CHANGELOG to KaC format and add elephant footers — @fatih
 2026-04-26 15:14 : fix: em dash sweep + changelog/readme updates — @fatih
 2026-04-26 15:24 : merge: elephant-metadata branch into main — @fatih
+2026-04-26 15:27 : ci: add skill validation workflow — @fatih
