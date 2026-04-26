@@ -78,6 +78,11 @@ When critiquing:
 
 ---
 
+## Related skills
+
+- `founder-profile` - structured intake to capture all founder/company data in YC form order. Run before form-fill.
+- `form-fill` - Playwright-based auto-fill. Claude fills every field, founder approves each section, founder clicks all buttons. Requires Playwright MCP and a completed founder profile.
+
 ## Reference files
 
 - `references/application-questions.md` - the full current question list (Company, Founders, Progress, Idea, Equity, Legal, Others) with word limits, what each is really asking, partner rubric, and example answers from Dropbox S07 and Basedash S20

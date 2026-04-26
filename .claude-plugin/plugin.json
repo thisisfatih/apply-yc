@@ -1,12 +1,14 @@
 {
   "name": "apply-yc",
-  "version": "0.1.0",
-  "description": "Help founders write, draft, critique, and improve their Y Combinator application.",
+  "version": "0.2.0",
+  "description": "Help founders write, draft, critique, and auto-fill their Y Combinator application.",
   "author": {
     "email": "fatih@fatihunver.com"
   },
   "keywords": ["yc", "ycombinator", "startup", "application", "fundraising"],
   "skills": [
-    "skills/yc-application/SKILL.md"
+    "skills/yc-application/SKILL.md",
+    "skills/founder-profile/SKILL.md",
+    "skills/form-fill/SKILL.md"
   ]
 }

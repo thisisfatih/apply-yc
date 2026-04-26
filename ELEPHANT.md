@@ -9,3 +9,4 @@
 2026-04-26 15:14 : fix: em dash sweep + changelog/readme updates — @fatih
 2026-04-26 15:24 : merge: elephant-metadata branch into main — @fatih
 2026-04-26 15:27 : ci: add skill validation workflow — @fatih
+2026-04-26 15:37 : feat: add founder-profile and form-fill skills (v0.2.0) — @fatih
