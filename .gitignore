@@ -1,0 +1,7 @@
+*.skill
+.DS_Store
+__pycache__/
+node_modules/
+*.pyc
+.env
+.claude/

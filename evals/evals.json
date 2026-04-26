@@ -1,0 +1,30 @@
+{
+  "skill_name": "yc-application",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Help me draft the 50-character pitch and the 'what is your company going to make' answer. My company is an AI tool that auto-generates legal contracts for SaaS companies. We have 12 customers paying $200/mo. Two technical co-founders, both ex-Stripe.",
+      "expected_output": "Two crisp pitch variants under 50 chars. 2-4 sentence product description with X-but-Y framing or matter-of-fact concrete description. No buzzwords."
+    },
+    {
+      "id": 2,
+      "prompt": "Critique this answer to 'most impressive thing': 'Our team has decades of combined experience building world-class products at top tech companies. We are exceptionally driven and uniquely positioned to win this market.'",
+      "expected_output": "Flag every adjective. Identify it as exact pattern Paul Graham warns against. Ask for specific verifiable achievements. Offer rewrite pattern."
+    },
+    {
+      "id": 3,
+      "prompt": "I got a YC interview next Friday for the Summer 2026 batch. What should I do to prepare?",
+      "expected_output": "Reference interview-prep.md. Tell them NOT to over-prepare. Highest leverage = ship something between now and interview. Provide question bank. Numbers cold. 10-min format."
+    },
+    {
+      "id": 4,
+      "prompt": "I applied last batch with the same idea and got rejected. Should I reapply this batch?",
+      "expected_output": "Pull from reapplying.md. Conditional: reapply if material progress shipped, else wait. Explicit guidance on 'what changed' question. Honest framing."
+    },
+    {
+      "id": 5,
+      "prompt": "What's a YC RFS and should I tailor my application to one?",
+      "expected_output": "Explain RFS = Requests for Startups. Don't reverse-engineer company to match. Mention if natural fit. Reference yc-context.md. Don't fabricate Spring 2026 list."
+    }
+  ]
+}
