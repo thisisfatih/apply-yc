@@ -14,3 +14,4 @@
 2026-04-26 15:43 : fix(ci): skill description >1024 chars -- awk reads past frontmatter --- when no post-description YAML key exists; fixed by adding version: key + trimming description to 594 chars — @fatih
 2026-04-26 15:46 : feat: rebuild flow for max acceptance rate — @fatih
 2026-04-26 15:48 : feat: onboarding skill + rewrite README with full flow — @fatih
+2026-04-26 15:49 : fix: em dash sweep in all 4 skill files (form-fill, yc-application, founder-profile, onboarding) — CI grep was failing — @fatih
