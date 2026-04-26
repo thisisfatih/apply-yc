@@ -80,18 +80,18 @@ Founders don't always disclose prior YC contact in the reapplication field. Befo
 - Prior accelerator section mentions a YC fellowship, YC interview, or YC rejection
 
 **Implicit signals:**
-- References to YC partners by first name in casual context ("Adora", "Dalton", "Harj") — implies direct contact
+- References to YC partners by first name in casual context ("Adora", "Dalton", "Harj") - implies direct contact
 - Amusing discovery or wildcard answer references a prior YC interview experience
-- Application shows unusually strong structural awareness of what YC looks for — suggests prior feedback loop
+- Application shows unusually strong structural awareness of what YC looks for - suggests prior feedback loop
 - "What convinced you to apply?" answer references a previous application or rejection specifically
 
 **What to do when you detect implicit signals:**
 
 1. Check whether the "what changed since last time" question is answered. If it's blank or says N/A but implicit signals exist, flag it: the founder is leaving their biggest opportunity unanswered.
 
-2. Reframe the critique accordingly. A reapplication is evaluated on *delta* — what changed since last time — not just on current state. A flat "12 paying customers" answer reads differently if last batch they had zero and YC told them traction was the gap.
+2. Reframe the critique accordingly. A reapplication is evaluated on *delta* (what changed since last time), not just on current state. A flat "12 paying customers" answer reads differently if last batch they had zero and YC told them traction was the gap.
 
-3. If you detect signals but the founder hasn't told you explicitly, ask one direct question before critiquing: "Have you applied to YC before? If so, what feedback did you get?" Don't guess — the answer changes how to read every section.
+3. If you detect signals but the founder hasn't told you explicitly, ask one direct question before critiquing: "Have you applied to YC before? If so, what feedback did you get?" Don't guess; the answer changes how to read every section.
 
 4. If prior YC interview is confirmed: the "impressive thing" and "interesting project together" answers may have already been evaluated. Their weak points were likely noted. Flag anything that looks unchanged from a standard first-application structure.
 

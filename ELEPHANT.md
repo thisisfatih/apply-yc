@@ -6,3 +6,4 @@
 2026-04-26 14:47 : docs: update install to claude plugin marketplace commands — @fatih
 2026-04-26 14:49 : readme footer added — @fatih
 2026-04-26 15:10 : docs: reformat CHANGELOG to KaC format and add elephant footers — @fatih
+2026-04-26 15:14 : fix: em dash sweep + changelog/readme updates — @fatih
