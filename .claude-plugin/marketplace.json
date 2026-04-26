@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "apply-yc",
-      "source": ".",
+      "source": "./",
       "description": "Help founders write YC applications that get interviews. Drafts, critiques, scores, and auto-fills the form.",
       "version": "0.3.0",
       "category": "productivity"
