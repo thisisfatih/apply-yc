@@ -181,14 +181,22 @@ YC accepts .md or .txt exports from coding agents (Claude Code, Cursor, etc.). U
 This is optional but a real differentiator. Most founders won't submit one. A strong session export shows how you think and how you work.
 
 ### "Are people using your product?" Yes/No
-If yes: expect follow-up fields for user/customer counts.
+
+If Yes, reveals: **"How many active users or customers do you have? How many are paying? Who is paying you the most, and how much do they pay you?"** - single free-text field.
+
+Rubric: numbers only. "300 signups, 14 paying, largest customer pays $500/mo" beats "growing user base with strong engagement." If none, answer should be No.
 
 ### "Do you have revenue?" Yes/No
-If yes: expect follow-up fields for monthly revenue. Six months of data, oldest first, one field per month. USD. State the actual number per month - cumulative is wrong, GMV is wrong. "0" for months with no revenue.
 
-**The bar is honesty, not impressive numbers.** Basedash got in with $30/month and ~300 signups. State the actual number.
+If Yes, reveals three fields:
 
-If revenue is context-dependent (grant, one-time, seasonal), explain in any notes field.
+**6-month revenue table** - auto-labeled with the 6 most recent calendar months (e.g. Oct 2025 - Mar 2026), one USD$ input per month. Not cumulative. Not GMV. Your revenue. Enter 0 for zero-revenue months. Fill oldest first.
+
+**"Where does your revenue come from?"** - breakdown by source if multiple (e.g. product A vs. product B, consulting vs. product). Skip if single source.
+
+**"Anything else regarding your revenue or growth rate?"** - context that changes how numbers should be read. Use for: just signed enterprise pilots closing next month, deliberately throttled signups to fix bugs, one-time grant inflating a month.
+
+**The bar is honesty, not impressive numbers.** Basedash got in with $30/month. State the actual numbers.
 
 ### Reapplication question
 "If you are applying with the same idea as a previous batch, did anything change? If you applied with a different idea, why did you pivot and what did you learn from the last idea?"
@@ -250,15 +258,22 @@ Paul Graham: "Often when we fund people it's to do something they list here and 
 ### "Have you formed ANY legal entity yet?"
 Yes/No. YC will help you incorporate as Delaware C-Corp if needed. Either answer is fine.
 
-If yes: additional fields for entity details and location.
+If Yes, reveals:
+- **"Please list all legal entities..."** - free text. E.g. "Delaware C Corp (incorporated Jan 2025), German GmbH (for EU operations)." List every entity including subsidiaries.
+- **"Please describe the equity ownership in percentages among founders, employees and other stockholders."** - free text, not a table. E.g. "Alice Chen (CEO) 45%, Bob Park (CTO) 45%, option pool 10%." Include titles. A roughly equal co-founder split is the strongest signal. Heavy imbalance (80/20) raises questions - address why if uneven.
 
 ### "Have you taken any investment yet?"
-Yes/No. If yes: investor names, amounts, valuation/cap.
-
-### "Are you currently fundraising?"
 Yes/No.
 
-Equity split per founder is entered on each founder's profile (Role & Responsibilities section), not here. A roughly equal co-founder split is the strongest signal. Heavy imbalance (80/20) raises questions.
+If Yes, reveals:
+- **"List any investments received."** - name, amount, premoney valuation/cap, type (convertible note, SAFE, stock), date. One investment per line.
+- **"How much raised total in USD?"** - number only.
+- **"How much money in the bank now?"** - number only.
+- **"How much do you spend per month?"** - number only. Monthly burn.
+- **"How long is your runway?"** - e.g. "5 months", "18 months".
+
+### "Are you currently fundraising?"
+Yes/No. Answer honestly - YC uses this to understand where you are in the funding process, not to screen you.
 
 ---
 

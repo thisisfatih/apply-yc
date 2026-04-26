@@ -145,9 +145,12 @@ Fill in order:
 3. **"What tech stack are you using, or planning to use, to build this product? Include AI models and AI coding tools you use."** - list specific stack; explicitly mention Claude Code, Cursor, or other AI coding tools if used
 4. **"Optional: attach a coding agent session you're particularly proud of."** - .md or .txt file, 25MB max. Flag: "YC is asking for a Claude Code or Cursor session export. If you have a session transcript showing good AI-assisted work, upload it here. Use /export in Claude Code to get a transcript."
 5. "Are people using your product?" - Yes/No radio
-   - If Yes: additional fields may appear (user count, active users)
+   - If Yes: reveals "How many active users or customers do you have? How many are paying? Who is paying you the most, and how much do they pay you?" - fill with specific numbers from profile
 6. "Do you have revenue?" - Yes/No radio
-   - If Yes: additional fields will appear - likely monthly revenue table. Fill one cell at a time, oldest month first.
+   - If Yes: reveals three fields:
+     a. 6-month revenue table (auto-labeled last 6 months). Fill one USD$ cell at a time, oldest first. Enter 0 for zero-revenue months. Confirm each cell before moving to next.
+     b. "Where does your revenue come from?" - fill if multiple revenue sources; skip if single
+     c. "Anything else regarding revenue or growth rate?" - fill if context matters (e.g. one-time grant, throttled growth, pilots closing soon)
 7. "If you are applying with the same idea as a previous batch, did anything change? If you applied with a different idea, why did you pivot and what did you learn from the last idea?" - fill only if reapplying; leave blank if first application
 8. "If you have already participated or committed to participate in an incubator, 'accelerator' or 'pre-accelerator' program, please tell us about it." - fill if applicable
 
@@ -176,12 +179,19 @@ After filling:
 
 Fill:
 1. "Have you formed ANY legal entity yet?" - Yes/No
-   - If Yes: additional fields appear for entity details
+   - If Yes: reveals two fields:
+     a. "Please list all legal entities..." - free text. List each with type and country/state. E.g. "Delaware C Corp (incorporated Jan 2025), German GmbH (Mar 2025 for EU ops)."
+     b. "Please describe equity ownership in percentages among founders, employees and stockholders." - free text, not a table. Format: "[Name] ([Title]) X%, [Name] ([Title]) Y%, option pool Z%." Pull founder equity from each founder's profile.
 2. "Have you taken any investment yet?" - Yes/No
-   - If Yes: additional fields appear for investment amount/source
+   - If Yes: reveals five fields:
+     a. "List any investments received" - name, amount, valuation cap, type (convertible note / SAFE / stock), date. One investment per line.
+     b. "How much raised total in USD?" - number only
+     c. "How much money in the bank now?" - number only
+     d. "How much do you spend per month?" - number only
+     e. "How long is your runway?" - e.g. "5 months"
 3. "Are you currently fundraising?" - Yes/No
 
-Equity percent per founder is filled in each founder's profile (Role & Responsibilities), not here.
+Equity percent per founder is captured in each founder's profile (Role & Responsibilities) and referenced here in the free-text equity description.
 
 After filling:
 - Take screenshot
