@@ -18,4 +18,5 @@
 2026-04-26 16:03 : feat(reapplying): add scenarios C/D/E for new co-founders, new company, mixed team — @fatih
 2026-04-26 16:17 : feat: ground all skills in real Summer 2026 form structure — @fatih
 2026-04-26 16:23 : fix: add .playwright-mcp to gitignore, em dash sweep founder-profile — @fatih
+2026-04-26 18:24 : docs: add shields.io badges to README (version 0.2.0, MIT, Claude Code platform) — @fatih
 2026-04-26 18:28 : feat: add marketplace.json to enable claude plugin marketplace add — @fatih
