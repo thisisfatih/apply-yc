@@ -1,5 +1,7 @@
 # apply-yc
 
+<img src="https://img.shields.io/badge/version-0.9.1-green"> <img src="https://img.shields.io/badge/license-MIT-green"> <img src="https://img.shields.io/badge/platform-Claude%20Code-blue">
+
 Claude Code plugin for writing YC applications that get interviews.
 
 Built on Paul Graham's "How to Apply" essay, partner advice (Seibel, Tan, Caldwell, Livingston), and real accepted applications (Dropbox S07, Basedash S20).
