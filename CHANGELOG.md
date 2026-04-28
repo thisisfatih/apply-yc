@@ -5,6 +5,12 @@ This project adheres to [Semantic Versioning](https://semver.org) and [Keep a Ch
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-04-28
+
+### Changed
+
+- Version bump to 1.0.0: first full end-to-end real application session completed. Plugin used to fill a live YC Summer 2026 application from scratch.
+
 ## [0.9.2] - 2026-04-28
 
 ### Added
