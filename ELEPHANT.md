@@ -43,3 +43,4 @@
 2026-04-26 22:17 : fix: restore marketplace name to apply-yc — @fatih
 2026-04-26 22:17 : fix: marketplace.json top-level name reverted thisisfatih -> apply-yc; PR #9 open on fix/marketplace-name — @fatih
 2026-04-26 22:18 : fix(readme): correct plugin install command namespace — @fatih
+2026-04-28 19:37 : apply: fatih running own YC app through apply-yc -- reapplicant (Fall 25, different idea + co-founder); new idea = Tonone.AI (solo AI-native company, "founder + tonone = whole company"); in Phase 0/1 discovery, awaiting answers on prior app feedback, co-founder split, traction — @fatih
