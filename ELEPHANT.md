@@ -44,4 +44,5 @@
 2026-04-26 22:17 : fix: marketplace.json top-level name reverted thisisfatih -> apply-yc; PR #9 open on fix/marketplace-name — @fatih
 2026-04-26 22:18 : fix(readme): correct plugin install command namespace — @fatih
 2026-04-28 19:51 : outreach: YC S26 promo run -- HN no URL rule (low karma = shadowban); best HN thread = 47884457 (solo devs vibe coding, 16 comments, active, thisisfatih not there); plan: new Ask/Tell HN post + comment; blocked on HN login (playwright no cookie share) -- @fatih
+2026-04-28 22:06 : docs: reviewed docs/sources.md -- 3 pillars: YC official (PG essay + Dropbox S07), partner direct-speech (Seibel/Tan/Caldwell), 2 real accepted apps (Dropbox + Basedash); all stats cited; refresh schedule quarterly/annually baked in -- @fatih
 2026-04-28 19:37 : apply: fatih running own YC app through apply-yc -- reapplicant (Fall 25, different idea + co-founder); new idea = Tonone.AI (solo AI-native company, "founder + tonone = whole company"); in Phase 0/1 discovery, awaiting answers on prior app feedback, co-founder split, traction — @fatih
