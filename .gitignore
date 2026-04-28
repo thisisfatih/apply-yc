@@ -7,3 +7,6 @@ node_modules/
 .claude/
 .playwright-mcp/
 .reports/
+.screenshots/
+marketing_plan/
+.temp/

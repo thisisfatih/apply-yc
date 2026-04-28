@@ -15,6 +15,13 @@ Every URL/source pulled from during build. Use to verify claim, refresh stale da
 | https://www.ycombinator.com/video | Founder video guidelines. Source for `video-and-demo.md`. |
 | https://www.ycombinator.com/people | Partner roster. Source for `yc-context.md` partner list. |
 
+## Garry Tan's operating philosophy (primary source)
+
+| Source | Used for |
+|--------|----------|
+| garryslist.org/posts/boil-the-ocean (Feb 2026) | Core "Boil the Ocean" thesis: when AI makes marginal cost near-zero, do the complete thing. Jevons Paradox (efficiency expands demand). Ephemeralization. Direct quotes in `garry-philosophy.md`. |
+| github.com/garrytan/gstack | gStack is Garry's personal operating system. Voice principles ("builder not consultant"), completeness principle, Boil the Lake framing. All applied in `garry-philosophy.md` and `SKILL.md`. |
+
 ## YC partner content
 
 | Source | Used for |

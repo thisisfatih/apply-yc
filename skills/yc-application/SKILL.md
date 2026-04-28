@@ -37,7 +37,7 @@ The right next step depends on where the founder is. Identify which of these mat
 
 **6. Founder is reapplying.** → First check FOUNDER_PROFILE for `reapply_change` and scenario type - if founder-profile has already run, all scenario analysis is there; do not re-ask those questions. If no FOUNDER_PROFILE exists, run founder-profile before drafting. Then read `references/reapplying.md` and use the rubric matching the scenario type (A/B/C/D/E). The "what changed since last time" question becomes critical and is a real opportunity, not a chore.
 
-**7. Founder wants strategic context - should they apply, what is YC looking for now, what's an RFS.** → Read `references/yc-context.md`. Covers current batch structure (Spring/Summer/Fall/Winter), the 2025-2026 AI-heavy priorities, deal terms ($500k = $125k for 7% + $375k uncapped MFN SAFE), acceptance dynamics, and Garry Tan's current Requests for Startups themes.
+**7. Founder wants strategic context - should they apply, what is YC looking for now, what's an RFS.** → Read `references/yc-context.md`. Covers current batch structure (Spring/Summer/Fall/Winter), the 2025-2026 AI-heavy priorities, deal terms ($500k = $125k for 7% + $375k uncapped MFN SAFE), acceptance dynamics, and Garry Tan's current Requests for Startups themes. For founders asking specifically about how Garry thinks or what the current YC CEO is optimizing for, also read `references/garry-philosophy.md`.
 
 ## Summer 2026 - new questions to draft
 
@@ -50,6 +50,8 @@ Two questions added to the Progress section for Summer 2026 that require active 
 ## Core principles to apply across every answer
 
 These are not rules to recite to the user - they are the lens through which Claude evaluates and writes every draft.
+
+**Boil the Ocean (Garry Tan).** When AI makes the marginal cost of a complete application near-zero, incomplete is a choice to be smaller. Every question: do the complete version. 3-5 pitch variants. Named competitors. Specific numbers. The founder who submits one pitch draft is competing against the one who submitted five and picked the best. Also applies to vision: describe not just what you're doing but what becomes possible at 10x scale. See `references/garry-philosophy.md`.
 
 **Matter-of-fact beats marketing.** Paul Graham: "We're immune to marketing-speak; to us it's just noise." A good description lets the reader reproduce the idea in their head. "We are going to transform the relationship between individuals and information" → zero content. "A database with a wiki-like interface, with a graphical UI for controlling who can see and edit what" → engagement. When drafting, ask: after reading this sentence, does the partner have a concrete picture? If not, rewrite.
 
@@ -93,6 +95,15 @@ When critiquing:
 - Don't recommend the founder do mock interviews extensively - YC explicitly says overprepared interviews go worse. The single highest-leverage interview prep is making real product/revenue progress before the interview.
 - Don't overhype YC. The founder is choosing to apply; they don't need to be sold on it. Be honest about acceptance rates (~1-2%) and the real bar.
 
+## Output format
+
+**Never print multi-paragraph answer drafts to the terminal.** Founders can't read walls of text in a chat window. Instead:
+
+1. Write all drafted answers to `.temp/yc-application-draft.md`. Update this file as drafts evolve.
+2. In the terminal: one line per section status ("Company section drafted - see .temp/yc-application-draft.md"), plus the highest-stakes answers inline (50-char pitch, most impressive thing) for quick review.
+3. When the full draft is ready: show the file path and a 3-bullet summary of the strongest signals. Let the founder open the file to review the full draft.
+4. For critique passes: show only the flagged lines + rewrites in terminal. Skip the "this is good" parts.
+
 ---
 
 ## Related skills
@@ -109,3 +120,4 @@ When critiquing:
 - `references/reapplying.md` - strategy for the "what changed" question and how to handle a previous rejection
 - `references/yc-context.md` - current batch structure, deal terms, RFS themes, who the partners are, and strategic context for 2025-2026
 - `references/successful-applications.md` - full text of Dropbox S07 and Basedash S20 applications with annotations on what works and why
+- `references/garry-philosophy.md` - Garry Tan's operating principles (Boil the Ocean, Jevons Paradox, ephemeralization, builder voice) applied to YC application coaching. Source: garryslist.org + garrytan/gstack.

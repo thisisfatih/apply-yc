@@ -1,6 +1,6 @@
 # apply-yc
 
-<img src="https://img.shields.io/badge/version-0.9.1-green"> <img src="https://img.shields.io/badge/license-MIT-green"> <img src="https://img.shields.io/badge/platform-Claude%20Code-blue">
+<img src="https://img.shields.io/badge/version-0.9.2-green"> <img src="https://img.shields.io/badge/license-MIT-green"> <img src="https://img.shields.io/badge/platform-Claude%20Code-blue">
 
 Claude Code plugin for writing YC applications that get interviews.
 
