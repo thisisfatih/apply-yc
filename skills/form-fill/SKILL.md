@@ -10,11 +10,12 @@ Fill the YC application form field by field. Claude types everything. The founde
 ## Prerequisites
 
 Before starting:
-1. A completed `FOUNDER_PROFILE` block from the founder-profile skill. If none exists, run that skill first.
-2. The founder must be logged into apply.ycombinator.com in their browser.
-3. Playwright must be connected.
+1. A completed `FOUNDER_PROFILE` block from the founder-profile skill, or a draft file at `.temp/yc-application-draft.md`. If neither exists, run `founder-profile` first.
+2. Playwright MCP must be active.
 
-If any prerequisite is missing, stop and say what's needed before continuing.
+**Do not ask the founder to open or navigate the browser.** Navigate there yourself. Pause only if the page shows a login screen - then say: "You need to log in at apply.ycombinator.com, then let me know and I'll continue."
+
+**Never output working notes, field status, or analysis to the terminal.** Write everything to `.temp/form-fill-status.md`. Terminal output should be: one-line status + screenshots only.
 
 ---
 
@@ -22,10 +23,11 @@ If any prerequisite is missing, stop and say what's needed before continuing.
 
 - **Claude fills fields. Founder clicks buttons.** No exceptions.
 - Never click: Submit, Save changes, Save & return to application, or any button that changes form state.
-- After filling each section, take a screenshot and show it. Ask: "Does this look right? Tell me anything to change, or click [button name] to continue."
+- **Batch-fill entire sections, then screenshot for review.** Never fill one field, confirm, fill next. Fill the whole section, take a screenshot, ask: "Does this look right? Anything to change, or click [button name] to continue."
+- **Use the field selector map.** Load `references/field-map.md` before filling any field. All textarea names, input names, and toggle IDs are pre-mapped. Do not discover them via trial and error.
 - If a field has a character limit and the drafted answer exceeds it, truncate and flag: "I truncated this to fit the [N]-char limit. Review the cut before continuing."
 - Never fabricate a value. If the profile has `TBD` for a field, leave the field blank and flag it.
-- If the founder corrects an answer mid-fill, update the profile block for that field and refill.
+- If the founder corrects an answer mid-fill, update the draft file and refill.
 
 ---
 
@@ -42,12 +44,16 @@ Fill founder profiles FIRST, then return to fill the main application.
 ## Startup
 
 ```
-1. Use browser_navigate to go to the application URL
-2. Use browser_snapshot to read the current page state
-3. Confirm the founder is logged in and on the application form
-4. Tell the founder: "I can see your application. I'll fill each section and
-   show you a screenshot before you advance. You click all the buttons -
-   I'll tell you which one and when. Starting with your founder profile(s)."
+1. Write a blank .temp/form-fill-status.md with today's date and "Status: starting"
+2. Use browser_navigate to go to https://apply.ycombinator.com
+3. Use browser_snapshot to check the page state
+   - If login screen: say "Log in at apply.ycombinator.com then let me know"
+   - If dashboard: navigate to the application edit URL from the FOUNDER_PROFILE
+     or find the active application link on the dashboard
+4. Confirm you're on the application form (URL contains /apps/.../edit)
+5. Tell the founder in one line: "Connected. Filling your profile first, then
+   main form. You click all save/submit buttons - I'll tell you which and when."
+6. Load references/field-map.md before filling any fields
 ```
 
 ---

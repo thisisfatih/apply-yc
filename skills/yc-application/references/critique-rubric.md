@@ -175,3 +175,7 @@ After question-by-question critique, do these holistic checks:
 **The honesty check.** Are there any answers that overstate, hide a problem, or use vague language to avoid stating something inconvenient? Flag them. Partners can tell, and it ages badly through the interview.
 
 **The momentum check.** Is there evidence of progress between when the founder started and now? If everything is "we plan to" or "we will", that's a problem. Find the recent shipped thing.
+
+**The completeness check (Garry's "Boil the Ocean").** Is every question answered at its maximum quality - or just answered? When AI makes the marginal cost of a complete application near-zero, a half-answer is a choice to be smaller. Apply this lens question-by-question: 50-char pitch should have 3+ variants explored; competitors section should name 4-6; impressive thing should be the 5th draft, not the first. See `garry-philosophy.md`.
+
+**The Jevons check.** Does the vision describe what becomes possible at 10x scale - or just what becomes cheaper? "AI replaces manual X" is 2022 thinking. "AI replaces manual X, which unlocks 100x more demand for X, which we handle" is 2026 thinking.

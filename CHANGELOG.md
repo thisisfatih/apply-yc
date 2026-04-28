@@ -5,6 +5,27 @@ This project adheres to [Semantic Versioning](https://semver.org) and [Keep a Ch
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-04-28
+
+### Changed
+
+- Version bump to 1.0.0: first full end-to-end real application session completed. Plugin used to fill a live YC Summer 2026 application from scratch.
+
+## [0.9.2] - 2026-04-28
+
+### Added
+
+- `skills/form-fill/references/field-map.md`: pre-mapped selectors for all YC Summer 2026 form fields (textarea names, input names, toggle label IDs). Eliminates trial-and-error field discovery during form fill.
+- `.temp/` added to `.gitignore`: working draft files no longer tracked.
+
+### Changed
+
+- `form-fill`: autonomous browser init -- Claude navigates to the form, pauses only for login. No longer asks the founder to open or navigate the browser manually.
+- `form-fill`: batch-fill rule -- fill entire sections before asking for review. No field-by-field confirmations.
+- `form-fill`: all working notes and status go to `.temp/form-fill-status.md`, not terminal.
+- `yc-application`: draft answers go to `.temp/yc-application-draft.md`. Terminal shows status lines and inline only for highest-stakes answers (pitch, impressive thing).
+- `founder-profile`: FOUNDER_PROFILE block written to `.temp/founder-profile.md`. Terminal shows 3-bullet summary only.
+
 ## [0.9.1] - 2026-04-26
 
 ### Added

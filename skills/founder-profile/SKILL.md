@@ -289,20 +289,28 @@ FOUNDER_PROFILE
 
 ---
 
+## Output format
+
+**Write the FOUNDER_PROFILE block to `.temp/founder-profile.md`, not to the terminal.**
+
+1. After Phase 2 angle analysis is confirmed: write the full `FOUNDER_PROFILE` block to `.temp/founder-profile.md`.
+2. In the terminal: say "Profile complete. Saved to .temp/founder-profile.md" followed by the 3 strongest angles as a bullet list (3 lines max).
+3. Do not print the full FOUNDER_PROFILE schema to the terminal. It's hundreds of lines and unreadable in a chat window.
+
+---
+
 ## Handoff
 
-After the founder confirms the angle analysis (or corrects it), hand off:
+After the founder confirms the angle analysis (or corrects it), write profile to file and hand off:
 
-"Now I have a clear picture of your strongest narrative. Let's draft the application. I'll hand this to the yc-application skill, which will:
+"Profile saved to `.temp/founder-profile.md`. Ready to draft.
 
-1. Draft the gatekeeping questions first (50-char pitch, product description, most impressive thing) - these must be excellent before anything else
-2. Complete the remaining sections using the narrative we established
-3. Run a full partner-mindset critique on all answers
-4. Fix anything that would kill or weaken the application
+Strongest signals:
+- [angle_1]
+- [angle_2]
+- [angle_3]
 
-Once the answers are locked and critiqued, we'll use the form-fill skill to fill the actual YC form field by field - you approve each section, you click all the buttons.
-
-Ready to start drafting?"
+Handing to yc-application to draft. Gatekeeping questions (50-char pitch, product description, most impressive thing) come first."
 
 Then invoke the `yc-application` skill and pass it the angle analysis as context.
 
