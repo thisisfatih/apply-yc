@@ -5,6 +5,17 @@ This project adheres to [Semantic Versioning](https://semver.org) and [Keep a Ch
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-07-26
+
+### Changed
+
+- Refreshed live YC batch data: current cycle is **Fall 2026**, on-time deadline **July 27, 2026 8pm PT** (decisions by Aug 28, 2026). Previous Summer 2026 / May 4 deadline superseded.
+- `yc-context.md`: replaced Spring 2026 RFS list (10 themes) with Fall 2026 RFS list (13 themes) - full rotation, notable shift toward defense/hard-tech/physical-world RFSs, several authored by non-partners.
+- `yc-context.md`: refreshed partner roster from ycombinator.com/people - split into Managing Partners (Friedman, Hu, Taggar) and General Partners (14 names); flagged Caldwell, Seibel, Migicovsky, Hariharan as no longer on the active roster, Livingston now listed as "Founder, Retired."
+- `yc-context.md`: added "house model" batch-structure detail (small autonomous company groups, weekly GP meetings, weekly dinners).
+- `application-questions.md`, `SKILL.md`: updated batch references from Summer 2026 to Fall 2026; softened the AI-tooling question claims to "presumed still live, verify at the form" since the live form sits behind login.
+- `docs/sources.md`: logged the July 26, 2026 refetch and updated refresh/staleness notes.
+
 ## [1.0.0] - 2026-04-28
 
 ### Changed

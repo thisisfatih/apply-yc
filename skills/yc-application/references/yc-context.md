@@ -1,20 +1,26 @@
-# YC Context (2025-2026)
+# YC Context (2026)
 
 Strategic context for founders deciding whether to apply, what YC is currently looking for, and the deal terms.
+
+## Current cycle: Fall 2026 - deadline is imminent
+
+**Fall 2026 on-time deadline: July 27, 2026, 8pm PT.** Decisions for on-time applicants land by August 28, 2026. Batch runs October-December 2026 in San Francisco. Late applications are still reviewed but with no timing guarantee. If a founder is reading this close to the deadline, that's the single most important fact - lead with it.
 
 ## Batch structure (current)
 
 YC moved from 2 batches per year to **4 batches per year** in 2024:
 - **Spring** (deadline ~February, batch ~April-June)
 - **Summer** (deadline ~May, batch ~July-September)
-- **Fall** (deadline ~August, batch ~October-December)
+- **Fall** (deadline ~late July, batch ~October-December)
 - **Winter** (deadline ~November, batch ~January-March)
 
-Each batch is ~250-300 companies. The on-time deadline matters: applications submitted before it get a guaranteed decision date. Late applications are still considered but with no timing guarantee.
+Each batch is ~250-300 companies. The on-time deadline matters: applications submitted before it get a guaranteed decision date.
 
-**Specific upcoming deadlines** can shift; the founder should check ycombinator.com/apply for the current cycle. As of late April 2026, the Summer 2026 deadline is May 4, 2026.
+**Specific upcoming deadlines** can shift; the founder should check ycombinator.com/apply for the current cycle rather than trust a hardcoded date past this batch.
 
-**Early Decision** lets you apply now for a future batch (e.g. apply in April for the Fall batch). Useful if you're a current student graduating later, or you want to get on YC's radar without committing to drop everything next month.
+**Early Decision** lets you apply now for a future batch (e.g. apply in July for the Winter batch). Useful if you're a current student graduating later, or you want to get on YC's radar without committing to drop everything next month.
+
+**Batch structure detail (new framing, Fall 2026):** YC now describes the batch as a "house model" - several small, autonomous groups of companies. Founders meet weekly with a dedicated YC General Partner, plus weekly dinners within their company group. The batch opens with a 3-day in-person kickoff. Program time commitment is billed as "a few hours a week if you do everything recommended" - all components optional beyond the core structure.
 
 ## Deal terms (current standard)
 
@@ -43,13 +49,13 @@ Garry Tan (current CEO) and the partners have been explicit about current priori
 
 **1. AI-native companies, not AI-bolted-on.** Spring 2025 batch was 70+ AI companies in 18 categories. Garry: "YC wants founders who treat AI agents not as features but as the core operating system of brand-new companies and industries." Companies are growing 10-20% per week (vs. the historical 2-4%) because AI has shifted software from "nice to have" to "I need it now."
 
-**2. Vertical AI agents.** Replacing entire job functions, not adding AI helper features. "Cursor for product managers." "AI-native hedge funds." "AI for government." Each is a *replacement* of human workflow, not a tool layered on top.
+**2. Vertical AI agents, and now a widening physical-world lens.** The vertical-agent thesis still holds - "AI-native hedge funds," "AI for government," "Cursor for product managers" were the framing a batch ago, each a *replacement* of a human workflow, not a tool layered on top. The Fall 2026 RFS list (see below) tilts noticeably toward hard-tech and physical-world plays - defense tech, offshore compute, robotics/human-hybrid workforces, physical-world data collection - alongside the software-agent asks. Don't assume "AI wrapper on SaaS" is still the median expectation; bring a real domain angle, software or physical.
 
 **3. Small teams reaching big revenue.** YC companies with 10-20 people reaching $10-20M ARR in 10-20 months. The current YC is comfortable funding companies that explicitly plan to stay lean.
 
 **4. Founders who shipped before they applied.** "About a quarter of the current YC batch is vibe coding their way to product market fit." The bar to ship has collapsed; the bar to demonstrate execution has risen.
 
-**5. AI coding tool fluency.** Summer 2026 is the first batch with an explicit form question asking for your tech stack *including AI models and AI coding tools* (Claude Code, Cursor, Copilot, etc.), plus an optional upload of a coding agent session export. YC added this to surface founders who treat AI tooling as core infrastructure, not an add-on. If you use Claude Code or Cursor heavily, this is a direct competitive advantage in the application itself.
+**5. AI coding tool fluency.** Summer 2026 introduced an explicit form question asking for your tech stack *including AI models and AI coding tools* (Claude Code, Cursor, Copilot, etc.), plus an optional upload of a coding agent session export. This skill assumes it carries into Fall 2026 since YC rarely removes a form question once added - but the live form sits behind a login this skill can't check directly, so confirm the exact wording at apply.ycombinator.com before finalizing an answer. YC added this to surface founders who treat AI tooling as core infrastructure, not an add-on. If you use Claude Code or Cursor heavily, this is a direct competitive advantage in the application itself.
 
 ## YC's AI-native company doctrine (2025-2026)
 
@@ -76,35 +82,60 @@ YC has published specific doctrine on what "AI-native" means operationally. Thes
 
 **How to use this in the application:** These concepts belong in answers about *why you'll win* (D1, D3) and *how you operate* (B section, team, co-founder story). Don't name-drop "token-max" as a buzzword - demonstrate it with specifics: your team size, your API bill, what you've shipped without a full engineering team.
 
-## Spring 2026 Requests for Startups (from ycombinator.com/rfs)
+## Fall 2026 Requests for Startups (from ycombinator.com/rfs)
 
-YC's RFS list signals what they actively want to see applications for. The Spring 2026 themes:
+YC's RFS list signals what they actively want to see applications for. It fully rotates most batches - the Spring 2026 list (Cursor for PMs, AI-native hedge funds, stablecoin rails, etc.) is gone. The Fall 2026 themes:
 
-- **Cursor for Product Managers** (Diana Hu) - AI-native system for PMs: analyze customer interviews/usage data, propose UI changes and dev tasks
-- **AI-Native Hedge Funds** (Garry Tan) - agent swarms doing investment research, thesis formation, and execution
-- **AI-Native Agencies** (Eric Migicovsky) - service businesses using AI to hit software margins on creative/marketing work
-- **Stablecoin Financial Services** (Anu Hariharan) - financial products on stablecoin rails: yield, tokenized assets, cross-border payments
-- **AI for Government** (Jared Friedman) - intelligent automation for government form processing and digital workflows
-- **Modern Metal Mills** (Gustaf Alströmer) - software/automation re-shoring American metal manufacturing; compress lead times, cut energy costs
-- **AI Guidance for Physical Work** (Jared Friedman) - real-time vision + coaching for skilled physical labor
-- **Large Spatial Models** - foundation models for robust spatial reasoning about physical objects and environments
-- **Infra for Government Fraud Hunters** - software accelerating False Claims Act investigations; evidence organization and document analysis
-- **Make LLMs Easy to Train** - developer tools simplifying LLM training: better APIs, datasets, ML-focused dev environments
+- **The Primer** (Andrew Miklas) - adaptive AI tutoring for children: reading, writing, math at private-tutor quality, at scale
+- **The Future of American Defense** (Daniel P. Driscoll, US Secretary of the Army) - commercial tech for ground combat: low-cost interceptors, sensors, drones, resilient logistics
+- **A Cloud for Small Software** (Pete Koomen) - infra that simplifies deploying/sharing single-user or small-team bespoke tools
+- **Multiplayer AI** (Aaron Epstein) - collaborative agent systems where teams share and work in the same agent sessions
+- **Compute at Sea** (Francois Chaubard) - offshore, modular data centers to route around electricity/land constraints for AI compute
+- **AI-Powered Consumer Products for 1 Billion People** (Raphael Schaad) - mass-market consumer apps riding increasingly cheap, capable AI agents
+- **AI for the Aging Population** (Max Kolysh) - voice interfaces, monitoring, robotics, and coordination tools for the caregiving shortage
+- **New Operating Systems for the Physical World** (Charlie Warren) - software managing hybrid human-robot workforces in construction, maintenance, fleet ops
+- **The Best Time to Build in Crypto** (Nemil Dalal) - crypto-rail infra/apps for payments, capital raising, agent commerce
+- **Data for the Real World** (Austin Tindle and Diana Hu) - dense physical-world data collection to feed AI models for energy, agriculture, logistics
+- **Proving You're Human** (Max Kolysh) - trust infra verifying real humans in digital interactions against deepfakes/voice cloning
+- **AI-Native Compliance Infrastructure** (Daivik Goel) - automated regulatory monitoring/reporting to cut manual compliance overhead
+- **Self-Maintaining APIs** (Harsha Gaddipati) - agents that auto-update customer codebases when API providers ship breaking changes
 
-**How to use the RFS:** Don't reverse-engineer your company to match an RFS. But if your company *naturally* fits one, mention it. It's a positive signal that a partner has actively put weight behind that domain.
+Notable shift from Spring 2026: fewer purely-software-agent RFSs, more physical-world/hard-tech (defense, offshore compute, robotics, physical data collection) and trust/compliance infra. Several authors (Driscoll, Chaubard, Schaad, Kolysh, Warren, Dalal, Tindle, Goel, Gaddipati) are not on YC's own partner roster - RFS authorship is opened to founders and outside domain experts, not just partners.
+
+**How to use the RFS:** Don't reverse-engineer your company to match an RFS. But if your company *naturally* fits one, mention it. It's a positive signal that someone at YC has actively put weight behind that domain. Re-check ycombinator.com/rfs each batch - this list is one of the fastest-rotating things in this reference.
 
 ## YC partners (you'll likely interview with one of these)
 
-- **Garry Tan** - President & CEO. Co-founded Posterous (acquired by Twitter), Initialized Capital. Strong interest in AI, contrarian bets, San Francisco.
-- **Diana Hu** - Group Partner. Co-founder/CTO of Escher Reality (acquired by Niantic). AR/AI background.
-- **Jared Friedman** - Group Partner. Co-founder of Scribd. Long tenure at YC.
-- **Harj Taggar** - Group Partner. Lightcone podcast host. Long YC history.
-- **Dalton Caldwell** - Partner Emeritus. Recorded the Interview Guide video. Was Head of Admissions for years.
-- **Michael Seibel** - Left YC in March 2025. Co-founded Twitch. Led the accelerator 2016-2024. His blog posts, podcast clips, and recorded talks are still canonical advice - they represent the YC partner mindset even though he's no longer active.
-- **Gustaf Alströmer** - Partner. Ex-Airbnb growth. Strong industrial / hard-tech interest.
-- **Eric Migicovsky** - Partner. Founded Pebble.
-- **Anu Hariharan** - Partner. Fintech focus.
-- **Jessica Livingston** - Founding Partner. Author of "Founders at Work." Lower visibility now but her advice still circulates.
+Re-fetched from ycombinator.com/people, July 2026. This roster changes - don't treat names here as permanent.
+
+- **Garry Tan** - President & CEO. Co-founded Posterous (acquired by Twitter), Initialized Capital. Strong interest in AI, contrarian bets, San Francisco. Not listed among the interview-rotation Managing/General Partners below - his current role is company-wide leadership, not routine partner interviews.
+
+**Managing Partners:**
+- **Jared Friedman** - Co-founder of Scribd (YC S06). Long YC tenure.
+- **Diana Hu** - Co-founder/CTO of Escher Reality (YC S17, acquired by Niantic). AR/AI background.
+- **Harj Taggar** - Founder of Triplebyte (YC S15) and Auctomatic (YC W07). Lightcone podcast host.
+
+**General Partners:**
+- **Gustaf Alströmer** - Ex-Airbnb Growth lead; ex-CEO of Heysan (YC W07). Industrial/hard-tech interest.
+- **Harshita Arora** - Co-founded AtoB (YC S20), trucking fintech infra.
+- **Grey Baker** - Co-founder of Pincites (S23) and Dependabot; early GoCardless (YC S11).
+- **Tom Blomfield** - Co-founder of Monzo and GoCardless (YC S11).
+- **Tyler Bosmeny** - Co-founder/CEO of Clever (S12).
+- **Nicolas Dessaigne** - Co-founder of Algolia (YC W14).
+- **Aaron Epstein** - Co-founder of Creative Market (YC W10, sold to Autodesk).
+- **Brad Flora** - Co-founder of Perfect Audience.
+- **Chris Golda** - Co-founder of BackType (YC S08, acquired by Twitter); Apache Storm.
+- **Ankit Gupta** - Co-founder of Reverie Labs (acquired by Ginkgo Bioworks, 2024).
+- **Pete Koomen** - Co-founder of Optimizely (W10).
+- **David Lieb** - Co-founder of Bump (S09, acquired by Google).
+- **Andrew Miklas** - Co-founder of PagerDuty (YC S10, NYSE:PD).
+- **Jon Xu** - Co-founder of FutureAdvisor (YC S10, acquired by BlackRock).
+
+**No longer on the active partner roster (as of this refresh) - keep for historical/citation context only, not as "who might interview you":**
+- **Dalton Caldwell** - Partner Emeritus. Recorded the still-canonical Interview Guide video. Was Head of Admissions for years.
+- **Michael Seibel** - Left YC in March 2025. Co-founded Twitch. Led the accelerator 2016-2024. His blog posts, podcast clips, and recorded talks are still canonical advice.
+- **Jessica Livingston** - Now listed as "Founder, Retired." Author of "Founders at Work." Advice still circulates.
+- **Eric Migicovsky** and **Anu Hariharan** - wrote RFS themes in earlier batches, no longer appear on the current partner roster.
 
 You don't pick which partner reviews you. All partners read all applications independently to avoid groupthink.
 

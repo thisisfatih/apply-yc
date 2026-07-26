@@ -37,11 +37,13 @@ The right next step depends on where the founder is. Identify which of these mat
 
 **6. Founder is reapplying.** → First check FOUNDER_PROFILE for `reapply_change` and scenario type - if founder-profile has already run, all scenario analysis is there; do not re-ask those questions. If no FOUNDER_PROFILE exists, run founder-profile before drafting. Then read `references/reapplying.md` and use the rubric matching the scenario type (A/B/C/D/E). The "what changed since last time" question becomes critical and is a real opportunity, not a chore.
 
-**7. Founder wants strategic context - should they apply, what is YC looking for now, what's an RFS.** → Read `references/yc-context.md`. Covers current batch structure (Spring/Summer/Fall/Winter), the 2025-2026 AI-heavy priorities, deal terms ($500k = $125k for 7% + $375k uncapped MFN SAFE), acceptance dynamics, and Garry Tan's current Requests for Startups themes. For founders asking specifically about how Garry thinks or what the current YC CEO is optimizing for, also read `references/garry-philosophy.md`.
+**7. Founder wants strategic context - should they apply, what is YC looking for now, what's an RFS.** → Read `references/yc-context.md`. Covers current batch structure (Spring/Summer/Fall/Winter), the current cycle's deadline, the 2025-2026 AI-heavy priorities, deal terms ($500k = $125k for 7% + $375k uncapped MFN SAFE), acceptance dynamics, and the current Requests for Startups themes (RFS authorship rotates across partners and outside domain experts, not just Garry Tan). For founders asking specifically about how Garry thinks or what the current YC CEO is optimizing for, also read `references/garry-philosophy.md`.
 
-## Summer 2026 - new questions to draft
+## Fall 2026 - current cycle and new-since-Summer-2026 questions to draft
 
-Two questions added to the Progress section for Summer 2026 that require active drafting:
+**Fall 2026 on-time deadline is July 27, 2026, 8pm PT** (decisions by Aug 28, 2026). If a founder mentions a deadline, check `references/yc-context.md` for the current one rather than assuming.
+
+Two questions were added to the Progress section starting Summer 2026 and are presumed still live for Fall 2026 (verify exact wording at the live form, which sits behind login):
 
 **Tech stack + AI tools:** "What tech stack are you using, or planning to use? Include AI models and AI coding tools you use." Draft this when completing the Progress section. Be specific: list the actual stack, and explicitly name any AI coding tools (Claude Code, Cursor, Copilot). YC added this question to surface AI-native builders. Founders who use these tools heavily should say so - it's a positive signal, not a red flag.
 
