@@ -7,13 +7,13 @@ Every URL/source pulled from during build. Use to verify claim, refresh stale da
 | URL | Used for |
 |-----|----------|
 | https://www.ycombinator.com/howtoapply | Paul Graham's "How to Apply" essay. Heavy quotation in `application-questions.md` and `successful-applications.md`. |
-| https://www.ycombinator.com/apply | Current batch deadline. Fetched April 2026. Spring 2026 = May 4. Re-fetch quarterly. |
+| https://www.ycombinator.com/apply | Current batch deadline. Fetched July 26, 2026. Fall 2026 on-time deadline = July 27, 2026 8pm PT; decisions by Aug 28, 2026. Re-fetch quarterly. |
 | https://www.ycombinator.com/apply/dropbox | Dropbox S07 full application. Quoted in `successful-applications.md` and `application-questions.md`. |
 | https://www.ycombinator.com/interviews | YC Interview Guide. Source for `interview-prep.md`. |
 | https://www.ycombinator.com/faq | Acceptance rate, deal terms, batch logistics. Source for `yc-context.md`. |
-| https://www.ycombinator.com/rfs | Requests for Startups (Spring 2026 list). Stale every batch. |
+| https://www.ycombinator.com/rfs | Requests for Startups (Fall 2026 list, fetched July 26 2026 - fully rotated from Spring 2026). Stale every batch. |
 | https://www.ycombinator.com/video | Founder video guidelines. Source for `video-and-demo.md`. |
-| https://www.ycombinator.com/people | Partner roster. Source for `yc-context.md` partner list. |
+| https://www.ycombinator.com/people | Partner roster. Fetched July 26 2026. Source for `yc-context.md` partner list. Confirmed departed/no-longer-listed since last refresh: Dalton Caldwell, Michael Seibel, Eric Migicovsky, Anu Hariharan (Jessica Livingston now shown as "Founder, Retired"). Re-fetch quarterly - this rotates. |
 
 ## Garry Tan's operating philosophy (primary source)
 
@@ -91,8 +91,9 @@ Every URL/source pulled from during build. Use to verify claim, refresh stale da
 
 ## what NOT trust forever
 
-- Spring 2026 RFS specifics - staled Q3 2026
-- Specific deadline dates - stale every batch
+- Fall 2026 RFS specifics - will stale again next batch (Winter 2026/27)
+- Specific deadline dates - stale every batch (Fall 2026: July 27, 2026 8pm PT - gone the moment Winter 2026 opens)
+- Partner roster - rotates faster than expected; verified July 2026 that 4 names present at the last refresh (Caldwell, Seibel, Migicovsky, Hariharan) are no longer listed
 - "Current as of 2025-2026" framing - re-date annually
 - Acceptance rate - drift over time
 - Garry Tan's specific quotes - fresh as of late 2025, stale by 2027

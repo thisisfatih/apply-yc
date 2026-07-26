@@ -1,6 +1,6 @@
 # YC Application Questions - Full Reference
 
-Current as of Summer 2026. The form is a single-page application at `apply.ycombinator.com`. Founder profile details (accomplishments, background) are filled on per-founder sub-pages, then the main form is completed.
+Current as of Fall 2026 (on-time deadline: July 27, 2026, 8pm PT). The form is a single-page application at `apply.ycombinator.com`. Founder profile details (accomplishments, background) are filled on per-founder sub-pages, then the main form is completed.
 
 ---
 
@@ -179,10 +179,10 @@ Current stage: idea, prototype, live product, revenue, profitable? State what ex
 ### "How long have each of you been working on this? How much of that has been full-time?"
 Per-founder, specific. "3 months part time. About ~5KLOC client and ~2KLOC server" (Dropbox). Quantify "part-time" - hours/week, or project output.
 
-### "What tech stack are you using, or planning to use? Include AI models and AI coding tools you use." ⭐ NEW Summer 2026
+### "What tech stack are you using, or planning to use? Include AI models and AI coding tools you use." ⭐ Added Summer 2026, presumed still live for Fall 2026
 YC explicitly wants to know about AI tooling. List the stack: languages, frameworks, infrastructure, AI APIs/models, AI coding tools (Claude Code, Cursor, Copilot). Don't sanitize this - if AI is central to how you build, say so. YC considers AI-native development a positive signal for Summer 2026.
 
-### "Optional: attach a coding agent session you're particularly proud of." ⭐ EXPERIMENTAL Summer 2026
+### "Optional: attach a coding agent session you're particularly proud of." ⭐ Experimental, added Summer 2026
 YC accepts .md or .txt exports from coding agents (Claude Code, Cursor, etc.). Use `/export` in Claude Code or equivalent in Cursor. Submit a session showing non-trivial AI-assisted engineering - problem diagnosis, architecture decisions, complex debugging. Max 25MB.
 
 This is optional but a real differentiator. Most founders won't submit one. A strong session export shows how you think and how you work.
@@ -296,7 +296,7 @@ Honest. One or two sentences.
 
 ## Batch Preference
 
-Select: Summer 2026 (July-September, San Francisco) OR A batch after Summer 2026.
+Select: Fall 2026 (October-December, San Francisco) OR a batch after Fall 2026.
 
 If choosing a future batch, explain briefly why in the application - e.g. you'll be done with school or closing a major deal.
 
