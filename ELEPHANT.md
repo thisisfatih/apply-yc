@@ -47,3 +47,7 @@
 2026-04-28 22:06 : docs: reviewed docs/sources.md -- 3 pillars: YC official (PG essay + Dropbox S07), partner direct-speech (Seibel/Tan/Caldwell), 2 real accepted apps (Dropbox + Basedash); all stats cited; refresh schedule quarterly/annually baked in -- @fatih
 2026-04-28 19:37 : apply: fatih running own YC app through apply-yc -- reapplicant (Fall 25, different idea + co-founder); new idea = Tonone.AI (solo AI-native company, "founder + tonone = whole company"); in Phase 0/1 discovery, awaiting answers on prior app feedback, co-founder split, traction — @fatih
 2026-04-28 22:39 : feat(v0.9.2): form-fill improvements from real session -- autonomous browser init (no asking founder to open browser), all output to .temp/ files (not terminal), field-map.md pre-maps all YC Summer 2026 selectors, batch-fill sections not field-by-field — @fatih
+2026-07-26 18:10 : [!!] refresh: batch moved Summer->Fall 2026 -- on-time deadline Jul 27 2026 8pm PT (tomorrow), decisions Aug 28 -- @fatih
+2026-07-26 18:10 : refresh: RFS fully rotated (10->13 themes), shift to defense/hard-tech/physical-world; several authors not YC partners -- @fatih
+2026-07-26 18:10 : refresh: partner roster -- Caldwell/Seibel/Migicovsky/Hariharan off active list, Livingston now "Founder, Retired"; added Managing vs General Partner split -- @fatih
+2026-07-26 18:10 : chore: v1.0.0->1.0.1 (plugin.json+README+CHANGELOG) for this data refresh, no code change — @fatih
